@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	/* Stil für die Breite des Body-Elements und die Schriftart */
+	body {
+	max-width: 80%;
+	display: inline-block;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Arial', sans-serif;
+	}
+	/* Stil für den Button */
+	.collapsible {
+	background-color: #E1E1E1;
+	color: #444;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+	}
+	.collapsible:after {
+	content: '\02795'; /* Unicode Zeichen für "plus"-Zeichen (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+	}
+	.active:after {
+	content: "\2796"; /* Unicode Zeichen für "minus"-Zeichen (-) */
+	}
+	/* Stil für den Inhalt, der standardmäßig ausgeblendet ist */
+	.content {
+	max-height: 0;
+	overflow: hidden;
+	padding: 0 10px;
+	background: #F1F1F1;
+	transition: max-height 0.2s ease-out;
+	}
+	/* Stil für den Zeilenumbruch innerhalb der generierten Sätze*/
+	ul#container {
+	white-space: pre-wrap;
+	padding-inline-start: 0px;
+	}
+	/* Stil für die Auflistung, damit keine Aufzählungszeichen angezeigt werden */
+	ul {
+	list-style-type: none;
+	}
+	</style>
+ </head>
+ <body>
+	<h1>Questgenerator</h1>
+	<h2>Epische Abenteuer</h2>
+	<p>Der Questgenerator für epische Abenteuer wurde entwickelt, um dir dabei zu helfen, schnell interessante und inspirierende Geschichten für deine Rollenspielsitzungen, Romane oder einfach zur eigenen Bereicherung zu erstellen. Es handelt sich um eine einfache Anwendung, mit der man schnell Geschichten mit einer erstaunlichen Vielfalt an möglichen Ergebnissen erstellen kann. Die Quests, die in diesem Generator erstellt werden, sind hochspannende, fantastische Handlungsbögen, die das Potenzial haben, eine ganze Kampagne oder einen Roman zu füllen.</p>
+	<!-- Titel mit Button -->
+	<button class="collapsible">
+	<b>Hinweise zur Erstellung einer Quest</b>
+	</button>
+	<!-- Inhaltsbereich -->
+	<div class="content">
+	<p>
+	<p>
+	<h3>Titel</h3>
+	</p>
+	<p>
+		Ein geeigneter Titel für die Quest.
+	</p>
+	<p>
+	<h3>Zusammenfassung</h3>
+	</p>
+	<p>Eine Zusammenfassung der Geschichte.</p>
+	<p>
+		<strong>Stelle den Questgeber vor:</strong> Beginne damit, den Charakter oder die Gruppe einzuführen, die die Quest in Gang setzt. Dies kann eine wichtige NSC-Person, eine Fraktion, eine Organisation oder sogar ein übernatürliches Wesen sein.
+	</p>
+	<p>
+		<strong>Erkläre das Ziel:</strong> Nenne klar das Hauptziel oder die Aufgabe der Quest. Dies kann eine Aufgabe sein, ein Problem, das gelöst werden muss, ein Gegenstand, der gefunden werden soll, oder eine Person, die gerettet werden muss.
+	</p>
+	<p>
+		<strong>Enthülle Komplikationen:</strong> Führe Hindernisse, Herausforderungen oder Wendungen ein, die die Charaktere während der Quest bewältigen müssen. Dies können unerwartete Feinde, versteckte Motive oder zusätzliche Aufgaben sein.
+	</p>
+	<p>
+		<strong>Biete Motivation:</strong> Gib einen Grund an, warum die Charaktere die Quest übernehmen möchten. Dies kann eine angebotene Belohnung, eine persönliche Verbindung oder ein Gefühl der Pflicht sein.
+	</p>
+	<p>
+		<strong>Enthülle den Bösewicht oder die Gegner:</strong> Identifiziere den Hauptantagonisten oder die Opposition, gegen die die Charaktere kämpfen oder die sie überwinden müssen, um die Quest abzuschließen.
+	</p>
+	<p>
+		<strong>Biete Handlungshinweise:</strong> Füge Handlungshinweise hinzu, die die Charaktere in die Quest hineinziehen. Dies können Gerüchte, Hinweise oder Ereignisse sein, die ihre Neugier oder Sorge wecken.
+	</p>
+	<p>
+		<strong>Setze die Szene:</strong> Beschreibe den Ort oder die Umgebung, an dem die Quest stattfindet. Dies kann ein spezifischer Ort, eine Region oder sogar eine magische Welt sein.
+	</p>
+	<p>
+		<strong>Hebe die Konsequenzen hervor:</strong> Erwähne die möglichen Konsequenzen oder Auswirkungen des Erfolgs oder Scheiterns der Quest auf die Welt, die Charaktere oder die Handlung.
+	</p>
+	<p>
+		<strong>Füge Tiefe mit Charakteren hinzu:</strong> Stelle unterstützende Charaktere oder Verbündete vor, die den Charakteren bei ihrer Quest helfen oder sie behindern können. Diese Charaktere bringen Tiefe und Komplexität in die Handlung.
+	</p>
+	<p>
+		<strong>Integriere Themen:</strong> Führe thematische Elemente in die Quest ein, wie Verrat, Erlösung, Gier oder Opfer, um emotionale Tiefe und Engagement hinzuzufügen.
+	</p>
+	<p>
+		<strong>Ermögliche Spielerhandlungsfreiheit:</strong> Schaffe Möglichkeiten für die Spieler, Entscheidungen zu treffen und den Verlauf des Quests zu beeinflussen. Dies kann das Engagement und die Immersion der Spieler verstärken.
+	</p>
+	<p>
+		<strong>Biete verschiedene Lösungsmöglichkeiten:</strong> Überlege, auf welche verschiedenen Arten die Quest abgeschlossen werden kann, abhängig von den Handlungen und Entscheidungen der Charaktere. Dies verleiht den Spielerentscheidungen eine Bedeutung und sorgt für Wiederspielbarkeit.
+	</p>
+	<p>
+	<h3>Abenteuer-Aufhänger</h3>
+	</p>
+	<p>Aufhänger, wie die Spielercharaktere mit der Geschichte in Berührung kommen. Vielleicht haben sie eine Verbindung zum Auftraggeber oder das Problem, das die Quest definiert, ist in der Gesellschaft mehr oder weniger bekannt. Schreibe mindestens zwei Aufhänger für das Abenteuer.
+	</p>
+	<p>
+		<strong>Identifiziere wichtige Charaktere:</strong> Beginne damit, wichtige Charaktere in deiner Spielwelt zu identifizieren. Das können mächtige Personen, berühmte Künstler, Herrscher oder auch gewöhnliche Menschen mit interessanten Hintergründen sein.
+	</p>
+	<p>
+		<strong>Etabliere Beziehungen:</strong> Bestimme die Beziehungen zwischen diesen Charakteren und den Spielercharakteren (SCs). Sind sie Freunde, Familienmitglieder, Bekannte oder jemand, den die SCs bewundern?
+	</p>
+	<p>
+		<strong>Einführen von Konflikten oder Herausforderungen:</strong> Stelle Konflikte oder Herausforderungen vor, mit denen diese Charaktere konfrontiert sind. Diese könnten persönliche Dilemmas sein, äußere Bedrohungen oder geheimnisvolle Ereignisse, die sie beeinflussen.
+	</p>
+	<p>
+		<strong>Schaffe Dringlichkeit:</strong> Füge der Situation eine Dringlichkeit hinzu. Es sollte einen Grund geben, warum die SCs schnell handeln müssen oder die ihnen vorgestellte Quest übernehmen sollten.
+	</p>
+	<p>
+		<strong>Binde die Spieler ein:</strong> Stelle sicher, dass die Spieler einen Grund haben, sich um die Quest oder das Problem zu kümmern. Es sollte mit den Zielen, Moralvorstellungen oder Interessen ihrer Charaktere übereinstimmen.
+	</p>
+	<p>
+		<strong>Erstelle mehrere Aufhänger:</strong> Biete mehrere Abenteuer-Aufhänger an, die auf verschiedene Charakterhintergründe und Interessen zugeschnitten sind. Dadurch finden alle Spieler etwas, das sie anspricht.
+	</p>
+	<p>
+		<strong>Präsentiere die Aufhänger organisch:</strong> Stelle die Abenteuer-Aufhänger während des Spielverlaufs auf organische Weise vor. Dies könnte durch einen Brief, eine Nachricht von einem NSC, eine öffentliche Ankündigung oder das persönliche Erleben eines Ereignisses geschehen.
+	</p>
+	<p>
+		<strong>Integriere Charakterhintergründe:</strong> Wenn möglich, verknüpfe die Abenteuer-Aufhänger mit den Hintergründen der Charaktere. Dadurch werden die Quests persönlicher und bedeutsamer für die Spieler.
+	</p>
+	<p>
+	<h3>Nicht-Spieler-Charaktere</h3>
+	</p>
+	<p>
+		<i>
+		<b>NSC-Name</b> Gesinnung Geschlecht Volk Profession 
+		</i>
+	</p>
+	<p>Beschreibung</p>
+	<p>
+		In die Beschreibung kommt entsprechende Hintergrundgeschichte und Verbindung zur Quest. Es sollten mindestens drei Nicht-Spieler-Charaktere genannt werden.
+	</p>
+	<p>
+		<strong>Name und Gesinnung:</strong> Beginne mit einem Namen für den Charakter und bestimme seine Gesinnung. Die Gesinnung definiert seine moralische Einstellung und allgemeine Persönlichkeitsmerkmale. Typische Ausrichtungen umfassen Rechtschaffen, Neutral und Chaotisch, kombiniert mit Gut, Neutral oder Böse.
+	</p>
+	<p>
+		<strong>Volk und Klasse:</strong> Entscheide dich für das Volk und Klasse des Charakters. Diese Kombination gibt dir ein grundlegendes Verständnis für ihre Fähigkeiten, Stärken und Schwächen. Völker können vielfältig sein, einschließlich Menschen, Elfen, Zwerge, Halblinge und mehr, während Klassen Krieger, Magier, Schurken und vieles mehr umfassen können.
+	</p>
+	<p>
+		<strong>Kurzer Hintergrund:</strong> Erstelle eine kurze Hintergrundgeschichte für den Charakter. Diese Geschichte sollte Einblick in seine Vergangenheit, Motivationen und Ziele geben. Überlege, welche Ereignisse oder Erfahrungen ihre aktuelle Lebensanschauung geprägt haben.
+	</p>
+	<p>
+		<strong>Persönlichkeitsmerkmale:</strong> Hervorhebung einiger wesentlicher Persönlichkeitsmerkmale, die das Verhalten des Charakters und seine Interaktionen mit anderen definieren. Diese Merkmale können positiv, negativ oder neutral sein. Berücksichtige ihre Einstellung, überzeugungen und etwaige Eigenheiten, die sie einzigartig machen.
+	</p>
+	<p>
+		<strong>Beziehungen und Konflikte:</strong> Skizziere die Beziehungen des Charakters zu anderen, sowohl positiv als auch negativ. Schließe Verbündete, Rivalen oder Feinde ein, die während des Abenteuers eine Rolle spielen könnten. Konflikte und Motivationen verleihen den Interaktionen des Charakters Tiefe.
+	</p>
+	<p>
+		<strong>Ziele und Herausforderungen:</strong> Definiere die aktuellen Ziele des Charakters und die Herausforderungen, denen er sich bei deren Erreichung stellen muss. Diese Ziele können persönlicher, beruflicher Natur sein oder mit der Hauptgeschichte deines Abenteuers verknüpft sein.
+	</p>
+	<p>
+		<strong>Motivationen und Schwächen:</strong> Identifiziere die Motivationen des Charakters, die treibenden Kräfte hinter seinen Handlungen. Füge ihnen auch einige Schwächen oder Charaktermängel hinzu, die sie realistischer und greifbarer machen.
+	</p>
+	<p>
+		<strong>Besondere Fähigkeiten oder Gegenstände:</strong> Wenn der Charakter über einzigartige Fähigkeiten, magische Gegenstände oder besondere Fertigkeiten verfügt, erwähne sie, um ihre Bedeutung in der Geschichte hervorzuheben.
+	</p>
+	<p>
+		<strong>Verbindungen zur Welt:</strong> überlege, wie der Charakter in die umfassendere Welt deines Settings passt. Gehört er einer Fraktion, Organisation oder herrschenden Macht an? Hat er eine Verbindung zu einem bestimmten Ort oder Ereignis?
+	</p>
+	<p>
+		<strong>Potenzielle Handlungsfäden:</strong> überlege, wie dieser Charakter als potenzieller Handlungsfaden oder Questgeber für deine Spieler dienen kann. Welche Rolle könnte er bei den sich entfaltenden Ereignissen des Abenteuers spielen?
+	</p>
+	<p>
+	<h3>Erster Akt</h3>
+	</p>
+	<p>Der erste Akt dient dazu, die Geschichte zu etablieren und den Rahmen für die Handlung zu setzen. Er kann den Charakteren die Möglichkeit geben, die Welt so zu erleben, wie sie war, bevor die Geschichte begann, oder er kann die Charaktere direkt in die Handlung einführen, indem er ein Ereignis herbeiführt, das eine dramatischere Situation schafft und die Charaktere direkt damit konfrontiert. Dies ist eine Aufforderung zum Handeln, die die dramatische Frage aufwirft und die Figuren dazu anregt, die Erzählung voranzutreiben.</p>
+	<p>
+		<strong>Einführung der Quest:</strong> Starte den ersten Akt mit einer klaren Einführung der Hauptaufgabe, die die Charaktere erledigen müssen. Stelle die Situation oder das Problem vor, das sie lösen sollen, und sorge dafür, dass es ihre Aufmerksamkeit erregt. Die Quest sollte ein klares Ziel haben, das die Charaktere motiviert, aktiv zu werden.
+	</p>
+	<p>
+		<strong>Zielcharaktere oder NSCs:</strong> Führe die Hauptpersonen ein, die die Quest geben oder in die Quest involviert sind. Dies können Auftraggeber, Verbündete, Gegner oder andere wichtige Figuren sein, die einen Einfluss auf die Handlung haben. Stelle sicher, dass die Charaktere klare Motivationen und Emotionen haben, um sie interessanter und greifbarer zu machen.
+	</p>
+	<p>
+		<strong>Relevante Hintergrundinformationen:</strong> Gib den Charakteren wichtige Informationen und Hintergrundgeschichten, die für die Quest relevant sind. Diese Informationen können dazu dienen, die Charaktere in die Welt und die Problematik der Quest einzuführen, sodass sie besser verstehen, warum sie die Aufgabe übernehmen sollten.
+	</p>
+	<p>
+		<strong>Mehrere Wege zum Ziel:</strong> Gib den Charakteren verschiedene Möglichkeiten, die Quest zu beginnen und das Ziel zu erreichen. Lass sie Entscheidungen treffen, wie sie vorgehen möchten, indem sie verschiedene Herangehensweisen ausprobieren können. Das ermöglicht ein Gefühl von Freiheit und spielerischer Gestaltung.
+	</p>
+	<p>
+		<strong>Herausforderungen und Hindernisse:</strong> Präsentiere den Charakteren Herausforderungen und Hindernisse, die sie überwinden müssen, um ihr Ziel zu erreichen. Diese können in Form von Kämpfen, Rätseln, sozialen Interaktionen oder anderen Tests auftreten. Die Herausforderungen sollten dem Schwierigkeitsgrad der Charaktere entsprechen und sie dazu anspornen, ihre Fähigkeiten und Fertigkeiten einzusetzen.
+	</p>
+	<p>
+		<strong>Enthülle eine größere Bedrohung:</strong> Lass den ersten Akt Hinweise oder Andeutungen auf eine größere Bedrohung oder eine tiefere Ebene der Quest enthalten. Das kann dazu beitragen, die Spannung zu steigern und die Neugier der Charaktere zu wecken, mehr über die Gesamthandlung zu erfahren.
+	</p>
+	<p>
+		<strong>Verschiedene mögliche Ergebnisse:</strong> Lass die Handlungen der Charaktere im ersten Akt Auswirkungen auf den weiteren Verlauf der Geschichte haben. Zeige, dass ihre Entscheidungen Konsequenzen haben können und sich auf die Entwicklung der Quest und der Welt auswirken.
+	</p>
+	<p>
+		<strong>Offenes Ende:</strong> Beende den ersten Akt nicht mit einer klaren Lösung oder einem Abschluss der Quest. Stattdessen soll der erste Akt in einem offenen Zustand enden, der die Charaktere motiviert, in den zweiten Akt überzugehen und die Geschichte weiterzuentwickeln.
+	</p>
+	<p>
+	<h3>Zweiter Akt</h3>
+	</p>
+	<p> Im zweiten Akt sollten die Figuren versuchen, das auslösende Ereignis zu überwinden, aber leider werden sie mit der größeren Herausforderung der dramatischen Frage konfrontiert. Dies wird als steigende Handlung bezeichnet. Um die Bedrohungen des zweiten Aktes zu überwinden, müssen die Charaktere normalerweise neue Informationen über die Situation oder über sich selbst erhalten oder neue Fähigkeiten erwerben, die es ihnen ermöglichen, die Situation auf andere Weise anzugehen.</p>
+	<p>
+		<strong>Konfrontation mit einem starken Gegner oder Hindernis:</strong> Im zweiten Akt sollten die Charaktere auf ein bedeutsames Hindernis, einen mächtigen Feind oder eine herausfordernde Aufgabe stoßen. Dies könnte ein Bosskampf, eine Festung, eine Höhle, ein unterirdisches Verlies, ein magischer Ort oder eine andere gefährliche Umgebung sein. Der Gegner oder das Hindernis sollte über einzigartige Fähigkeiten oder Mechaniken verfügen, die die Spieler vor schwierige Entscheidungen stellen.
+	</p>
+	<p>
+		<strong>Verschiedene Herausforderungen:</strong> Der zweite Akt sollte ebenfalls aus verschiedenen Herausforderungen bestehen, die die Charaktere bewältigen müssen. Diese Herausforderungen können Kampf, Rätsel, Erkundung, soziale Interaktion und mehr umfassen. Die Herausforderungen sollten auf die Stärken und Schwächen der Charaktere abzielen und ihnen die Möglichkeit geben, ihre Fähigkeiten und Talente einzusetzen.
+	</p>
+	<p>
+		<strong>Enthüllung von Informationen und Wendepunkten:</strong> Im zweiten Akt sollten wichtige Informationen über die Hauptkonflikte und -charaktere enthüllt werden. Dies könnte durch Dialoge, Tagebücher, gefundene Notizen, Überreste oder andere Quellen geschehen. Enthülle Geheimnisse, die die Motivationen der Gegner erklären oder die Geschichte tiefer gestalten. Füge auch überraschende Wendepunkte hinzu, um das Interesse der Spieler aufrechtzuerhalten.
+	</p>
+	<p>
+		<strong>Entscheidungen und Konsequenzen:</strong> Gib den Charakteren Entscheidungsfreiheit, wie sie mit den Herausforderungen umgehen möchten. Ihre Handlungen sollten Auswirkungen auf die Geschichte und das Spieluniversum haben. Es kann unterschiedliche Wege geben, ein Ziel zu erreichen, aber auch Konsequenzen für ihre Entscheidungen.</p>
+	<p>
+		<strong>Charakterentwicklung und Beziehungen:</strong> Nutze den zweiten Akt, um die Charaktere weiterzuentwickeln und ihre Hintergrundgeschichten zu vertiefen. Biete Möglichkeiten für bedeutungsvolle Interaktionen zwischen den Charakteren oder mit NSCs, um ihre Beziehungen zu stärken oder zu verändern.
+	</p>
+	<p>
+		<strong>Überraschende Elemente und Wendungen:</strong> Füge unerwartete Ereignisse hinzu, um die Spannung zu erhöhen und die Spieler zu überraschen. Dies könnten überraschende Wendungen in der Handlung sein, das Auftauchen neuer Feinde oder Allianzen, unvorhersehbare Elemente in den Kämpfen oder Geheimnisse, die gelüftet werden.
+	</p>
+	<p>
+		<strong>Bedeutungsvolle Belohnungen:</strong> Stelle sicher, dass die Spieler für ihre Bemühungen im zweiten Akt belohnt werden. Dies könnten magische Gegenstände, wertvolle Informationen, neue Verbündete oder andere Vorteile sein, die ihre Fähigkeiten und Fortschritte im Spiel verbessern.
+	</p>
+	<p>
+		<strong>Offene Enden und Vorbereitung für den dritten Akt:</strong> Der zweite Akt sollte auf den dritten Akt hinarbeiten und die Spieler auf das große Finale vorbereiten. Lasse offene Fragen und ungelöste Konflikte zurück, um die Neugierde der Spieler zu wecken und sie motiviert zu halten, das Abenteuer fortzusetzen.
+	</p>
+	<p>
+		<strong>Berücksichtige die Stärken der Charaktere:</strong> Denke daran, die spezifischen Fähigkeiten und Talente der Charaktere in die Herausforderungen einzubeziehen. Nutze die Fähigkeiten der Spieler, um ein interaktives und lohnendes Spielerlebnis zu schaffen.
+	</p>
+	<p>
+		<strong>Achte auf das Spieltempo:</strong> Der zweite Akt sollte ein ausgewogenes Tempo haben, mit aktionsreichen Szenen, Momenten der Ruhe für Charakterentwicklung und Zeit zum Nachdenken über Entscheidungen. Es sollte sich nicht zu schnell oder zu langsam entwickeln.
+	</p>
+	<p>
+	<h3>Dritter Akt</h3>
+	</p>
+	<p>Der letzte Akt stellt den Höhepunkt der Geschichte und ihre Auflösung dar. Die wichtigsten Spannungen, die sich aus der dramatischen Frage ergeben, treten in den Vordergrund, und die Charaktere müssen sich ihnen stellen oder scheitern. Diese intensive Szene sollte alle losen Enden, die die Charaktere entdeckt haben, miteinander verbinden und die dramatische Frage beantworten.</p>
+	<p>
+		<strong>Identifiziere das Hauptziel:</strong> Der dritte Akt sollte das Hauptziel oder die finale Herausforderung des Abenteuers enthalten. Es sollte klar sein, was die Charaktere erreichen müssen, um das Abenteuer erfolgreich abzuschließen. Dieses Ziel sollte mit den Ereignissen aus dem ersten und zweiten Akt verknüpft sein.
+	</p>
+	<p>
+		<strong>Einführung neuer Hindernisse:</strong> Führe neue Hindernisse, Gegner oder Schwierigkeiten ein, um den dritten Akt interessant und herausfordernd zu gestalten. Diese Hindernisse könnten aus den Auswirkungen früherer Entscheidungen oder Enthüllungen resultieren.
+	</p>
+	<p>
+		<strong>Charakterentwicklung:</strong> Nutze den dritten Akt, um die Charakterentwicklung zu fördern. Dies kann durch persönliche Konflikte, moralische Entscheidungen oder die Enthüllung von Hintergrundgeschichten erreicht werden.
+	</p>
+	<p>
+		<strong>Epische Schlachten:</strong> Plane epische Schlachten, Kämpfe oder Konfrontationen, die den Höhepunkt des Abenteuers darstellen. Diese Kämpfe sollten mit dem Hauptziel verbunden sein und den Einsatz hoch halten.
+	</p>
+	<p>
+		<strong>Rätsel und Herausforderungen:</strong> Integriere Rätsel oder andere Herausforderungen, die die Fähigkeiten der Charaktere testen. Diese könnten auch direkt mit dem Hauptziel zusammenhängen und müssen gelöst werden, um voranzukommen.
+	</p>
+	<p>
+		<strong>Verbindung zu früheren Akten:</strong> Stelle sicher, dass der dritte Akt mit den Ereignissen und Entscheidungen der vorherigen Akte in Zusammenhang steht. Wiederbelebe Elemente aus dem ersten und zweiten Akt, um eine kohärente und fesselnde Geschichte zu schaffen.
+	</p>
+	<p>
+		<strong>Auswirkungen früherer Entscheidungen:</strong> Lasse die früheren Entscheidungen der Charaktere Auswirkungen auf den dritten Akt haben. Zeige, wie ihre Handlungen das Finale beeinflussen und möglicherweise neue Optionen oder Herausforderungen eröffnen.
+	</p>
+	<p>
+		<strong>Moralische Dilemmata:</strong> Biete den Charakteren moralische Dilemmata, bei denen sie schwierige Entscheidungen treffen müssen, die ihre Auswirkungen auf die Spielwelt haben. Diese Entscheidungen könnten auch mit dem Hauptziel verknüpft sein.
+	</p>
+	<p>
+		<strong>Zeitdruck und Eskalation:</strong> Schaffe einen Sinn für Dringlichkeit und Eskalation im dritten Akt. Die Charaktere könnten unter Zeitdruck stehen, um das Hauptziel zu erreichen, bevor es zu spät ist.
+	</p>
+	<p>
+		<strong>Auflösung von Handlungsbögen:</strong> Stelle sicher, dass die Handlungsbögen der Hauptcharaktere und wichtigen NSCs im dritten Akt eine befriedigende Auflösung finden. Lass die Charaktere Wachstum und Veränderung durchmachen, um ihre Reise im Abenteuer abzurunden.
+	</p>
+	<p>
+		<strong>Belohnungen und Konsequenzen:</strong> Belohne die Charaktere für ihre Erfolge und ihre Herangehensweise an Herausforderungen im dritten Akt. Zeige auch die Konsequenzen ihrer Entscheidungen, sowohl positive als auch negative.
+	</p>
+	<p>
+		<strong>Überraschungen und Enthüllungen:</strong> Integriere überraschungen und unerwartete Enthüllungen im dritten Akt, die das Abenteuer aufregend und unvorhersehbar machen.
+	</p>
+	<p>
+		<strong>Zusätzliche Hintergrundgeschichte:</strong> Nutze den dritten Akt, um weitere Hintergrundgeschichten oder Weltinformationen zu enthüllen, die das Verständnis der Charaktere für die Spielwelt vertiefen.
+	</p>
+	<p>
+		<strong>Finale Begegnung:</strong> Plane die finale Begegnung oder das Finale des Abenteuers, bei dem die Charaktere das Hauptziel erreichen und das Abenteuer zu einem spannenden Abschluss bringen.
+	</p>
+	<p>
+		<strong>Belohnungen und Abschluss:</strong> Biete den Charakteren angemessene Belohnungen für ihre Erfolge im dritten Akt und bringe das Abenteuer zu einem befriedigenden Abschluss.
+	</p>
+	</p>
+	</div>
+	<script>
+	// JavaScript zum Ein- und Ausklappen des Inhalts
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+	
+	for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight) {
+		content.style.maxHeight = null;
+		} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+		}
+	});
+	}
+	// Javascript zur Generierung der Quests
+	
+	// Erstellt Eingabefeld und Buttons
+	// Eingabefeld für die Anzahl der zu generierenden Quests
+	const numQuestsField = document.createElement('input');
+	numQuestsField.type = 'number';
+	numQuestsField.style.margin = '10px';
+	numQuestsField.style.width = '50px';
+	
+	// Button zur Generierung der Sätze
+	const btnGenerate = document.createElement('button');
+	btnGenerate.style.margin = '10px';
+	btnGenerate.textContent = 'Generieren';
+	
+	// Button zum Löschen der Sätze
+	const btnClear = document.createElement('button');
+	btnClear.textContent = 'Löschen';
+	btnClear.style.margin = '10px';
+	
+	// Button zum Kopieren der Sätze in die Zwischenablage
+	const btnCopy = document.createElement('button');
+	btnCopy.textContent = 'In Zwischenablage kopieren';
+	btnCopy.style.margin = '10px';
+	
+	// Erstellt Questfunktion
+	function generateQuest() {
+		// Abschnitt Akteur und entsprechende Begriffe für den Questgenerator
+		const akteure = [{
+			name: "Himmlische",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist in der Regel von Natur aus gut, stammt aus höheren Ebenen und strebt danach, Herrlichkeit zu verbreiten, fällt aber manchmal in Ungnade",
+			optionen: [{
+				name: "Engel",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "dient in der Regel als Bote oder Krieger im Auftrag von einer Gottheit mit guter Ausrichtung und interagiert in deren Namen mit den Sterblichen"
+			}, {
+				name: "Archon",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein mythisches Wesen, das keinem anderen Herrn als sich selbst dient und versucht, Gerechtigkeit und Rechtschaffenheit in das Leben der Sterblichen zu bringen"
+			}, {
+				name: "Halbgott",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist vielleicht eine Gottheit mit Nischendomäne, das Kind von Gottheiten oder der sterbliche Aspekt einer Gottheit sein"
+			}, {
+				name: "Entität",
+				geschlecht: "femininum",
+				adjektiv: "einzigartige",
+				präfix: "",
+				suffix: "",
+				text: "ist eine mysteriöse himmlische Kraft und absolut einzigartig. Sie kann von flammenden Schwertern, die in allmächtigen Sprachen sprechen, bis zu mächtigen Säulen aus fühlendem Licht, alles sein"
+			}]
+		}, {
+			name: "Kriegsherr",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist ein militärischer Befehlshaber, der sich seiner Sache und seiner Herrschaft verschrieben hat, indem er seine Horden, Legionen oder Völker beherrscht",
+			optionen: [{
+				name: "Kriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "humanoide",
+				präfix: "",
+				suffix: "",
+				text: "kann in vielen Formen erscheinen, vom Zwergenstrategen bis zum Elfenhäuptling und befehligt in der Regel Armeen anderer Humanoider"
+			}, {
+				name: "Kriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "monströse",
+				präfix: "",
+				suffix: "",
+				text: "ist in der Regel von angemessener Intelligenz, furchterregenden kriegerischen Fähigkeiten und befehligt normalerweise Horden ähnlicher Monster"
+			}, {
+				name: "Konstruktkriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "wurde für den Krieg gebaut, kennt nichts anderes als Zerstörung und befehligt normalerweise organisierte Legionen anderer Konstrukte"
+			}, {
+				name: "Aberrationskriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann im Gegensatz zu anderen Kriegsherren in einer Vielzahl von Formen vorkommen, ist für den humanoiden Verstand fast unergründlich und kämpft auf seltsame Weise, welche die Realität stören kann"
+			}]
+		}, {
+			name: "Herrscher",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist eine Person, die über ganze Reiche oder zumindest über Städte und Festungen herrscht. Im Namen derer, die er regiert, erlässt er Gesetze und ordnet Handlungen an, hoffentlich in deren bestem Interesse",
+			optionen: [{
+				name: "Magokrat",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann beispielsweise ein Zauberkönig und oder ein Mitglied in einem Zaubererrat sein. Die Herrscher der Magokratien gelangen durch ihre Zauberkunst an die Macht"
+			}, {
+				name: "Plutokrat",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "glaubt, dass Geld die Welt regiert und erkauft sich den Weg zur Macht mit unermesslichem Reichtum"
+			}, {
+				name: "Gerontokrat",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein weiser Alter, der in Genokratien herrscht und der sein gesammeltes Wissen und manchmal auch seine spirituelle Macht zur Herrschaft nutzt"
+			}, {
+				name: "Monarch",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein Alleinherrscher, der an die Gesetze eines Reiches gebunden ist, typischerweise aus einer privilegierten königlichen Familie und mit dem vorherigen Monarchen verwandt oder von ihm abstammend"
+			}]
+		}, {
+			name: "Monster",
+			geschlecht: "neutrum",
+			adjektiv: "mythische",
+			präfix: "",
+			suffix: "",
+			text: "bestimmt die Welt. Seine Entscheidungen verändern die Lebensbedingungen aller anderen Lebewesen, ist fast unaufhaltsam und furchterregend",
+			optionen: [{
+				name: "Riesenkrake",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein Tentakelmonster der Tiefe, will die Wellen beherrschen und kann mit einem Tentakelschlag ganze Fischerdörfer auslöschen"
+			}, {
+				name: "Tarrasque",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine Kreatur, welche die Welt verändert und unter der Erde schlummert. Diese unergründliche Bestie bringt mit Leichtigkeit Zerstörung"
+			}, {
+				name: "Riese",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann in unterschiedlichen Arten kommen. Die verschiedenen Arten von Riesen haben ihre eigenen einzigartigen Eigenschaften und Kulturen, aber alle sind wahrhaft mächtig in ihrer Kraft und viele in ihrer angeborenen Magie"
+			}, {
+				name: "Chimäre",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine relativ intelligente Kreatur, welche aus magischen Experimenten hervorgeht, und ist eine furchterregende Maschinen der Zerstörung"
+			}]
+		}, {
+			name: "Drache",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist ein uralter Wyrm, der viele der ältesten Orte in den Reichen der Sterblichen heim sucht. Dieses monströse Reptil ist ein wahrhaft monumentales Geschöpf, das in der Lage ist, ungeheure Verwüstungen anzurichten und Seelen zu retten",
+			optionen: [{
+				name: "Drache",
+				geschlecht: "maskulinum",
+				adjektiv: "chromatische",
+				präfix: "",
+				suffix: "",
+				text: "ist typischerweiser böse, ein eifersüchtiger Schatzhüter, territorial und bösartig"
+			}, {
+				name: "Drache",
+				geschlecht: "maskulinum",
+				adjektiv: "metallische",
+				präfix: "",
+				suffix: "",
+				text: "ist normalerweise guter Gesinnung, kann eine humanoide Gestalt annehmen und mischt sich gerne in die Angelegenheiten der Sterblichen ein, meist zu deren Vorteil"
+			}, {
+				name: "Schattendrache",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist von negativer Energie verdorben und will nichts anderes, als Verzweiflung in den Reichen zu verbreiten"
+			}, {
+				name: "Drakolich",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein zaubernder Drache, der wie manch Sterblicher nach dem Untod strebte. Das Ergebnis ist ein Drakolich - ein schrecklicher untoter Drache mit unglaublichen arkanen Kräften"
+			}]
+		}, {
+			name: "Unhold",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist die Verkörperung des Bösen in physischer Form und kann in seiner Gesinnung von rechtschaffen bis chaotisch schwanken. Entsprechend vielfältig sind Gestalten und Persönlichkeiten von Unholden",
+			optionen: [{
+				name: "Erzteufel",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein dunkler Händler und infernaler Legionär. Ein böse Adliger aus der Unterwelt, der versucht, die Sterblichen zu verderben"
+			}, {
+				name: "Dämonenfürst",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist die Verkörperung von verheerendem Chaos, gebunden in Eisen und Fleisch und versucht, die Ordnung zu stürzen und durch das Böse zu ersetzen"
+			}, {
+				name: "Vettelkönigin",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine selbstsüchtige Betrügerin, die es liebt, die Realität zu verdrehen und Sterbliche in neue Formen zu verwandeln"
+			}, {
+				name: "Unhold",
+				geschlecht: "maskulinum",
+				adjektiv: "bestimmte",
+				präfix: "nicht näher",
+				suffix: "",
+				text: "kann in einer Vielzahl von Formen vorkommen, von denen einige nicht leicht zu kategorisieren sind und kann sich als alles Mögliche manifestieren, von monströsen Söldnern bis hin zu korrupten Münzen"
+			}]
+		}, {
+			name: "Urtümliche",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist ein Wesen reinen elementaren Zorns und kann eine Vielzahl von Formen annehmen. Vom Phönix aus reiner Flamme bis zur lebendigen Welle mit reißendem Schlund",
+			optionen: [{
+				name: "Erdelementar",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "will die Welt in der Realität erden, was die Zerstörung von Magie und Übernatürlichem bedeuten kann"
+			}, {
+				name: "Feuerelementar",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "will um seiner selbst willen verzehren und zerstören"
+			}, {
+				name: "Wasserelementar",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "will Veränderung und Wachstum erreichen, was bedeutet, dass er Ereignisse in Bewegung setzt"
+			}, {
+				name: "Luftelementar",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "will Schöpfung sehen und bietet die Möglichkeit, Neues entstehen zu lassen"
+			}]
+		}, {
+			name: "Zauberwirker",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist von hohem Ansehen und großer Macht; mit einem wohlgesetzten Wort oder einer bedeutungsvollen Geste verändert er das Gefüge der Wirklichkeit",
+			optionen: [{
+				name: "Zauberer",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "strotzt vor arkanen Kräften, die er in verschiedenen Formen kultiviert und ist typischerweise ein eher chaotischer Macher und magischer Unruhestifter"
+			}, {
+				name: "Magier",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist durch seine Ausbildung geprägt, beschäftigt sich mit der Hierarchie in der Welt und versucht oft, die soziale Ordnung aufrechtzuerhalten"
+			}, {
+				name: "Hexenmeister",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "bezieht seine Kräfte von anderen, mächtigeren Wesen und dient seinem Schutzherren im Austausch für seine magischen Kräfte"
+			}, {
+				name: "Zauberwirker",
+				geschlecht: "maskulinum",
+				adjektiv: "bestimmte",
+				präfix: "nicht näher",
+				suffix: "",
+				text: "bezieht seine Magie möglicherweise von Göttern, aus der natürlichen Welt oder durch übersinnliche Kräfte. Seine Motive sind so vielfältig wie seine Magie"
+			}]
+		}, {
+			name: "Unheilsbringer",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist ein unverkennbarer Aspekt der kommenden Finsternis. Dieses Wesen, dient dazu, die Apokalypse herbeizuführen, und kann in verschiedenen Formen auftreten",
+			optionen: [{
+				name: "Unheilsbringer",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "der Eroberung",
+				text: "bringt Unterdrückung und Gewalt in ihren schlimmsten Formen mit sich und verzehrt diejenigen, die er berührt, mit seiner Lust am Erobern"
+			}, {
+				name: "Unheilsbringer",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "des Krieges",
+				text: "verbreitet die bestialische Lust am Blutvergießen wie Krankheit und Mord unter denen, die ihn sehen"
+			}, {
+				name: "Unheilsbringer",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "des Hungers",
+				text: "ist die ungezähmte Wut der Wildnis, verschärft durch seine Fähigkeit, Missernten, Seuchen, Plagen und Dürren hervorzurufen"
+			}, {
+				name: "Unheilsbringer",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "des Todes",
+				text: "ist der unausweichliche, leibhaftige Tod. Dieses Wesen nimmt den Sterblichen das Leben so leicht wie das Auslöschen einer Kerze"
+			}]
+		}, {
+			name: "Wesen",
+			geschlecht: "neutrum",
+			adjektiv: "planare",
+			präfix: "",
+			suffix: "",
+			text: "ist ein Wesen aus anderen Existenzebenen und unterscheidet sich stark in Form und Veranlagung von anderen planaren Wesen. Er ist oft in irgendeiner Weise mit seiner ursprünglichen Existenzebene verbunden und weist deren Besonderheiten auf",
+			optionen: [{
+				name: "Vertreter",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "der Ordnung",
+				text: "bewahrt und will, dass sich alles andere nach komplexen, vielleicht nicht erkennbaren, universellen Gesetzen richtet"
+			}, {
+				name: "Vertreter",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "des Chaos",
+				text: "sieht keinen Wert in der etablierten Hierarchie der Gesellschaft und will alle Möglichkeiten des Lebens ausspielen"
+			}, {
+				name: "Vertreter",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "des Guten",
+				text: "ist urteilend und fromm, in der Hoffnung, diejenigen zu läutern, die der Sterblichkeit den Rücken kehren"
+			}, {
+				name: "Vertreter",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "des Bösen",
+				text: "wirkt als Verderber und Zerstörer und will, dass die Sterblichen ihr Leben auf zerstörerische Weise leben"
+			}]
+		}, {
+			name: "Aberration",
+			geschlecht: "femininum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "kommt aus einem fernen Reich der Astralwelt, von den bösen Sternen, aus der Dunkelheit zwischen ihnen oder aus einem anderen planaren Reich und ist wahrhaft ein fremdes Wesen mit oft unverständlichen Motiven",
+			optionen: [{
+				name: "Aboleth",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine schleimige Ausgeburten aus dem Jenseits, die versucht, die Götter zu stürzen und sich selbst als spirituelle Herrscher zu etablieren"
+			}, {
+				name: "Sternengezücht",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine Äonen alte Lebensform von einem fremden Stern. Dieses unglaublich fremde Wesen erntet Lebewesen von anderen Welten, um sie zu erforschen und sich von ihnen zu nähren"
+			}, {
+				name: "Wesen",
+				geschlecht: "neutrum",
+				adjektiv: "ältere",
+				präfix: "",
+				suffix: "",
+				text: "ist ein unermesslich alter Titan, der durch den Astralraum schwebt und jahrhundertealte Pläne ausbrütet. Dieses Wesen benutzt Sterbliche als Diener"
+			}, {
+				name: "Schrecken",
+				geschlecht: "maskulinum",
+				adjektiv: "kriechende",
+				präfix: "",
+				suffix: "",
+				text: "ist ein schreckliches Eiterwesen, das durch Portale und andere astrale Objekte eindringt und intelligent genug ist, um mit der Zeit ganze Städte zu verschlingen"
+			}]
+		}, {
+			name: "Untote",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist ein schrecklicher Feind. Die intelligenten Untoten besitzen effektiv Unsterblichkeit, die sie zu Meistern ihrer selbst gewählten Form der Zerstörung macht",
+			optionen: [{
+				name: "Lich",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist der ultimative untote Zauberwirker - ein Lich verfügt über ungebundene arkane Kräfte, die es ihm ermöglichen, sich von Seelen zu ernähren und im Untod zu verweilen"
+			}, {
+				name: "Mumienfürst",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein einbalsamierter Herrscher, der durch die Taten längst untergegangener Kulturen oder durch natürliche Prozesse konserviert wurde und will das zurückerobern, was einst ihm gehörte"
+			}, {
+				name: "Vampir",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein furchterregender Gestaltwandler, der sich vom Blut der Sterblichen ernährt, mit einem Blick verzaubert und mit einem Biss aussaugt"
+			}, {
+				name: "Schädelfürst",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein Haufen durch nekrotische Magie gefesselte Knochen, der Legionen von Untoten auf gespenstischen Schlachtfeldern befehligt und die militärischen Eroberungen seines Lebens nachahmt"
+			}]
+		},];
+
+		// Funktion, um einen zufälligen Text aus einer Optionenliste auszuwählen
+		function getRandomOption(options) {
+			const index = Math.floor(Math.random() * options.length);
+			return options[index];
+		} 
+
+		// Bestimmt das Geschlecht für den Akteur und führt Variablendeklarationen und Zuweisungen für Akteure durch
+		const akteurData = getRandomText(akteure);
+		const akteurName = akteurData.name;
+		const akteurGeschlecht = akteurData.geschlecht;
+		const akteurAdjektiv = akteurData.adjektiv;
+		const akteurPräfix = akteurData.präfix;
+		const akteurSuffix = akteurData.suffix;
+		const akteurText = akteurData.text;
+		const akteurOption = getRandomOption(akteurData.optionen);
+		const akteurOptionName = akteurOption.name;
+		const akteurOptionGeschlecht = akteurOption.geschlecht;
+		const akteurOptionAdjektiv = akteurOption.adjektiv;
+		const akteurOptionPräfix = akteurOption.präfix;
+		const akteurOptionSuffix = akteurOption.suffix;
+		const akteurOptionText = akteurOption.text;
+
+		// Abschnitt ZielOptionOption für den Questgenerator
+
+		const feindlicherKriegsherr = [{
+				name: "Kriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "humanoide",
+				präfix: "",
+				suffix: "",
+				text: "kann in vielen Formen erscheinen, vom Zwergenstrategen bis zum Elfenhäuptling und befehligt in der Regel Armeen anderer Humanoider"
+			}, {
+				name: "Kriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "monströse",
+				präfix: "",
+				suffix: "",
+				text: "ist in der Regel von angemessener Intelligenz, furchterregenden kriegerischen Fähigkeiten und befehligt normalerweise Horden ähnlicher Monster"
+			}, {
+				name: "Konstruktkriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "wurde für den Krieg gebaut, kennt nichts anderes als Zerstörung und befehligt normalerweise organisierte Legionen anderer Konstrukte"
+			}, {
+				name: "Aberrationskriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann im Gegensatz zu anderen Kriegsherren in einer Vielzahl von Formen vorkommen, ist für den humanoiden Verstand fast unergründlich und kämpft auf seltsame Weise, welche die Realität stören kann"
+			},];
+
+		// Bestimmt das Geschlecht für den feindlichen Drachen und führt Variablendeklarationen und Zuweisungen für den feindlichen Drachen durch
+		const feindlicherKriegsherrData = getRandomText(feindlicherKriegsherr);
+		const feindlicherKriegsherrName = feindlicherKriegsherrData.name;
+		const feindlicherKriegsherrGeschlecht = feindlicherKriegsherrData.geschlecht;
+		const feindlicherKriegsherrAdjektiv = feindlicherKriegsherrData.adjektiv;
+		const feindlicherKriegsherrPräfix = feindlicherKriegsherrData.präfix;
+		const feindlicherKriegsherrSuffix = feindlicherKriegsherrData.suffix;
+		const feindlicherKriegsherrText = feindlicherKriegsherrData.text;
+
+			const feindlichesMonster = [{
+				name: "Riesenkrake",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein Tentakelmonster der Tiefe, will die Wellen beherrschen und kann mit einem Tentakelschlag ganze Fischerdörfer auslöschen"
+			}, {
+				name: "Tarrasque",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine Kreatur, welche die Welt verändert und unter der Erde schlummert. Diese unergründliche Bestie bringt mit Leichtigkeit Zerstörung"
+			}, {
+				name: "Riese",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann in unterschiedlichen Arten kommen. Die verschiedenen Arten von Riesen haben ihre eigenen einzigartigen Eigenschaften und Kulturen, aber alle sind wahrhaft mächtig in ihrer Kraft und viele in ihrer angeborenen Magie"
+			}, {
+				name: "Chimäre",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine relativ intelligente Kreatur, welche aus magischen Experimenten hervorgeht, und ist eine furchterregende Maschinen der Zerstörung"
+			},];
+
+		// Bestimmt das Geschlecht für den feindlichen Drachen und führt Variablendeklarationen und Zuweisungen für den feindlichen Drachen durch
+		const feindlichesMonsterData = getRandomText(feindlichesMonster);
+		const feindlichesMonsterName = feindlichesMonsterData.name;
+		const feindlichesMonsterGeschlecht = feindlichesMonsterData.geschlecht;
+		const feindlichesMonsterAdjektiv = feindlichesMonsterData.adjektiv;
+		const feindlichesMonsterPräfix = feindlichesMonsterData.präfix;
+		const feindlichesMonsterSuffix = feindlichesMonsterData.suffix;
+		const feindlichesMonsterText = feindlichesMonsterData.text;
+
+			const feindlicherDrache = [{
+				name: "Drache",
+				geschlecht: "maskulinum",
+				adjektiv: "chromatische",
+				präfix: "",
+				suffix: "",
+				text: "ist typischerweiser böse, ein eifersüchtiger Schatzhüter, territorial und bösartig"
+			}, {
+				name: "Drache",
+				geschlecht: "maskulinum",
+				adjektiv: "metallische",
+				präfix: "",
+				suffix: "",
+				text: "ist normalerweise guter Gesinnung, kann eine humanoide Gestalt annehmen und mischt sich gerne in die Angelegenheiten der Sterblichen ein, meist zu deren Vorteil"
+			}, {
+				name: "Schattendrache",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist von negativer Energie verdorben und will nichts anderes, als Verzweiflung in den Reichen zu verbreiten"
+			}, {
+				name: "Drakolich",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein zaubernder Drache, der wie manch Sterblicher nach dem Untod strebte. Das Ergebnis ist ein Drakolich - ein schrecklicher untoter Drache mit unglaublichen arkanen Kräften"
+			},];
+
+		// Bestimmt das Geschlecht für den feindlichen Drachen und führt Variablendeklarationen und Zuweisungen für den feindlichen Drachen durch
+		const feindlicherDracheData = getRandomText(feindlicherDrache);
+		const feindlicherDracheName = feindlicherDracheData.name;
+		const feindlicherDracheGeschlecht = feindlicherDracheData.geschlecht;
+		const feindlicherDracheAdjektiv = feindlicherDracheData.adjektiv;
+		const feindlicherDrachePräfix = feindlicherDracheData.präfix;
+		const feindlicherDracheSuffix = feindlicherDracheData.suffix;
+		const feindlicherDracheText = feindlicherDracheData.text;
+
+			const feindlicherUnhold = [{
+				name: "Erzteufel",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein dunkler Händler und infernaler Legionär. Ein böse Adliger aus der Unterwelt, der versucht, die Sterblichen zu verderben"
+			}, {
+				name: "Dämonenfürst",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist die Verkörperung von verheerendem Chaos, gebunden in Eisen und Fleisch und versucht, die Ordnung zu stürzen und durch das Böse zu ersetzen"
+			}, {
+				name: "Vettelkönigin",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine selbstsüchtige Betrügerin, die es liebt, die Realität zu verdrehen und Sterbliche in neue Formen zu verwandeln"
+			}, {
+				name: "Unhold",
+				geschlecht: "maskulinum",
+				adjektiv: "bestimmte",
+				präfix: "nicht näher",
+				suffix: "",
+				text: "kann in einer Vielzahl von Formen vorkommen, von denen einige nicht leicht zu kategorisieren sind und kann sich als alles Mögliche manifestieren, von monströsen Söldnern bis hin zu korrupten Münzen"
+			},];
+
+
+		// Bestimmt das Geschlecht für den feindlichen Unhold und führt Variablendeklarationen und Zuweisungen für den feindlichen Unhold durch
+		const feindlicherUnholdData = getRandomText(feindlicherUnhold);
+		const feindlicherUnholdName = feindlicherUnholdData.name;
+		const feindlicherUnholdGeschlecht = feindlicherUnholdData.geschlecht;
+		const feindlicherUnholdAdjektiv = feindlicherUnholdData.adjektiv;
+		const feindlicherUnholdPräfix = feindlicherUnholdData.präfix;
+		const feindlicherUnholdSuffix = feindlicherUnholdData.suffix;
+		const feindlicherUnholdText = feindlicherUnholdData.text;
+
+		// Erstelle das Array für Nomen mit schwacher Deklination
+		const nomenSchwacheDeklination = [ 'Kriegsherr', 'Konstruktkriegsherr', 'Aberrationskriegsherr', 'Magokrat', 'Plutokrat', 'Gerontokrat', 'Monarch', 'Tarrasque', 'Riese', 'Dämonenfürst', 'Urtümliche', 'Untote', 'Mumienfürst', 'Schädelfürst', 'Ebenbürtige', 'Himmlische'];
+	
+		// Funktion zum Erzeugen der verschiedenen Fälle eines Substantivs
+		function declineNoun(noun, gender, adjectiv, prefix, suffix, text) {
+			const endsWithE = noun.endsWith('e');
+			const endsWithT = noun.endsWith('t');
+			const endsWithD = noun.endsWith('d');
+			const endsWithS = noun.endsWith('s');
+			const endsWithZ = noun.endsWith('z');
+			const endsWithCh = noun.endsWith('ch');
+	
+			// Überprüfe, ob das Nomen eine schwache Deklination hat
+			if (nomenSchwacheDeklination.includes(noun)) {
+	
+				// Deklinationsregeln für Adjektive und Nomen mit schwacher Deklination
+				const nounCases = {
+					maskulinum: {
+						nominativ: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: endsWithE ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						dativ: endsWithE ? 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' : 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						akkusativ: endsWithE ? 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: endsWithE ? 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'r ' : '') + noun + 'r' + (suffix ? ' ' + suffix : ''): 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'r ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: endsWithE ? 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						dativEin: endsWithE ? 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						akkusativEin: endsWithE ? 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'der',
+						genitivBestimmterArtikel: 'des',
+						dativBestimmterArtikel: 'dem',
+						akkusativBestimmterArtikel: 'den',
+	
+						nominativPersonalpronomen: 'er',
+						genitivPersonalpronomen: 'seiner',
+						dativPersonalpronomen: 'ihm',
+						akkusativPersonalpronomen: 'ihn',
+	
+						nominativWelcher: 'welcher',
+						genitivWelcher: 'welches',
+						dativWelcher: 'welchem',
+						akkusativWelcher: 'welchen',
+	
+						nominativPossesivpronomenMaskulinum: 'sein',
+						genitivPossesivpronomenMaskulinum: 'seines',
+						dativPossesivpronomenMaskulinum: 'seinem',
+						akkusativPossesivpronomenMaskulinum: 'seinen',
+	
+						nominativPossesivpronomenFemininum: 'seine',
+						genitivPossesivpronomenFemininum: 'seiner',
+						dativPossesivpronomenFemininum: 'seiner',
+						akkusativPossesivpronomenFemininum: 'seine',
+	
+						nominativPossesivpronomenNeutrum: 'sein',
+						genitivPossesivpronomenNeutrum: 'seines',
+						dativPossesivpronomenNeutrum: 'seinem',
+						akkusativPossesivpronomenNeutrum: 'sein',
+	
+						nominativPossesivpronomenPlural: 'seine',
+						genitivPossesivpronomenPlural: 'seiner',
+						dativPossesivpronomenPlural: 'seinen',
+						akkusativPossesivpronomenPlural: 'seine',
+					},
+				};
+				return nounCases[gender];
+			} else {
+				// Normale Deklinationsregeln für Adjektive und Nomen ohne schwache Deklination
+				const nounCases = {
+					maskulinum: {
+						nominativ: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: endsWithE ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): endsWithT ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): endsWithS ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): endsWithZ ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativ: endsWithE ? 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativ: endsWithE ? 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'r ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: endsWithE ? 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): endsWithT ? 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativEin: endsWithE ? 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativEin: endsWithE ? 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'der',
+						genitivBestimmterArtikel: 'des',
+						dativBestimmterArtikel: 'dem',
+						akkusativBestimmterArtikel: 'den',
+	
+						nominativPersonalpronomen: 'er',
+						genitivPersonalpronomen: 'seiner',
+						dativPersonalpronomen: 'ihm',
+						akkusativPersonalpronomen: 'ihn',
+	
+						nominativWelcher: 'welcher',
+						genitivWelcher: 'welches',
+						dativWelcher: 'welchem',
+						akkusativWelcher: 'welchen',
+	
+						nominativPossesivpronomenMaskulinum: 'sein',
+						genitivPossesivpronomenMaskulinum: 'seines',
+						dativPossesivpronomenMaskulinum: 'seinem',
+						akkusativPossesivpronomenMaskulinum: 'seinen',
+	
+						nominativPossesivpronomenFemininum: 'seine',
+						genitivPossesivpronomenFemininum: 'seiner',
+						dativPossesivpronomenFemininum: 'seiner',
+						akkusativPossesivpronomenFemininum: 'seine',
+	
+						nominativPossesivpronomenNeutrum: 'sein',
+						genitivPossesivpronomenNeutrum: 'seines',
+						dativPossesivpronomenNeutrum: 'seinem',
+						akkusativPossesivpronomenNeutrum: 'sein',
+	
+						nominativPossesivpronomenPlural: 'seine',
+						genitivPossesivpronomenPlural: 'seiner',
+						dativPossesivpronomenPlural: 'seinen',
+						akkusativPossesivpronomenPlural: 'seine',
+					},
+					femininum: {
+						nominativ: 'die ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						dativ: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativ: 'die ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: 'eine ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: 'einer ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						dativEin: 'einer ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativEin: 'eine ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'die',
+						genitivBestimmterArtikel: 'der',
+						dativBestimmterArtikel: 'der',
+						akkusativBestimmterArtikel: 'die',
+	
+						nominativPersonalpronomen: 'sie',
+						genitivPersonalpronomen: 'ihrer',
+						dativPersonalpronomen: 'ihr',
+						akkusativPersonalpronomen: 'sie',
+	
+						nominativWelcher: 'welche',
+						genitivWelcher: 'welcher',
+						dativWelcher: 'welcher',
+						akkusativWelcher: 'welche',
+	
+						nominativPossesivpronomenMaskulinum: 'ihr',
+						genitivPossesivpronomenMaskulinum: 'ihres',
+						dativPossesivpronomenMaskulinum: 'ihrem',
+						akkusativPossesivpronomenMaskulinum: 'ihren',
+	
+						nominativPossesivpronomenFemininum: 'ihre',
+						genitivPossesivpronomenFemininum: 'ihrer',
+						dativPossesivpronomenFemininum: 'ihrer',
+						akkusativPossesivpronomenFemininum: 'ihre',
+	
+						nominativPossesivpronomenNeutrum: 'ihr',
+						genitivPossesivpronomenNeutrum: 'ihres',
+						dativPossesivpronomenNeutrum: 'ihrem',
+						akkusativPossesivpronomenNeutrum: 'ihr',
+	
+						nominativPossesivpronomenPlural: 'ihre',
+						genitivPossesivpronomenPlural: 'ihrer',
+						dativPossesivpronomenPlural: 'ihren',
+						akkusativPossesivpronomenPlural: 'ihre',
+					},
+					neutrum: {
+						nominativ: 'das ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativ: 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativ: 'das ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 's ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativEin: 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativEin: 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 's ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'das',
+						genitivBestimmterArtikel: 'des',
+						dativBestimmterArtikel: 'dem',
+						akkusativBestimmterArtikel: 'das',
+	
+						nominativPersonalpronomen: 'es',
+						genitivPersonalpronomen: 'seiner',
+						dativPersonalpronomen: 'ihm',
+						akkusativPersonalpronomen: 'es',
+	
+						nominativWelcher: 'welches',
+						genitivWelcher: 'welchen',
+						dativWelcher: 'welchem',
+						akkusativWelcher: 'welches',
+	
+						nominativPossesivpronomenMaskulinum: 'sein',
+						genitivPossesivpronomenMaskulinum: 'seines',
+						dativPossesivpronomenMaskulinum: 'seinem',
+						akkusativPossesivpronomenMaskulinum: 'seinen',
+	
+						nominativPossesivpronomenFemininum: 'seine',
+						genitivPossesivpronomenFemininum: 'seiner',
+						dativPossesivpronomenFemininum: 'seiner',
+						akkusativPossesivpronomenFemininum: 'seine',
+	
+						nominativPossesivpronomenNeutrum: 'sein',
+						genitivPossesivpronomenNeutrum: 'seines',
+						dativPossesivpronomenNeutrum: 'seinem',
+						akkusativPossesivpronomenNeutrum: 'sein',
+	
+						nominativPossesivpronomenPlural: 'seine',
+						genitivPossesivpronomenPlural: 'seiner',
+						dativPossesivpronomenPlural: 'seinen',
+						akkusativPossesivpronomenPlural: 'seine',
+					}
+				};
+				return nounCases[gender];
+			}
+		}
+	
+		//Erstellt die Konstante für deklinierte Akteurnomen
+		const declinedAkteur = declineNoun(akteurName, akteurGeschlecht, akteurAdjektiv, akteurPräfix, akteurSuffix, akteurText);
+		const declinedAkteurOption = declineNoun(akteurOptionName, akteurOptionGeschlecht, akteurOptionAdjektiv, akteurOptionPräfix, akteurOptionSuffix, akteurOptionText);
+		
+		//Erstellt die Konstante für deklinierte ZielOptionOption
+		const declinedFeindlicherKriegsherr = declineNoun(feindlicherKriegsherrName, feindlicherKriegsherrGeschlecht, feindlicherKriegsherrAdjektiv, feindlicherKriegsherrPräfix, feindlicherKriegsherrSuffix, feindlicherKriegsherrText)
+		const declinedFeindlichesMonster = declineNoun(feindlichesMonsterName, feindlichesMonsterGeschlecht, feindlichesMonsterAdjektiv, feindlichesMonsterPräfix, feindlichesMonsterSuffix, feindlichesMonsterText)
+		const declinedFeindlicherDrache = declineNoun(feindlicherDracheName, feindlicherDracheGeschlecht, feindlicherDracheAdjektiv, feindlicherDrachePräfix, feindlicherDracheSuffix, feindlicherDracheText)
+		const declinedFeindlicherUnhold = declineNoun(feindlicherUnholdName, feindlicherUnholdGeschlecht, feindlicherUnholdAdjektiv, feindlicherUnholdPräfix, feindlicherUnholdSuffix, feindlicherUnholdText)
+
+
+		// Abschnitt Ziele und entsprechende Begriffe für den Questgenerator
+		const ziele = [{
+			name: "Reich",
+			geschlecht: "neutrum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "und seine Größe hängt stark von der Geographie, der Kultur und einer Reihe anderer Faktoren ab, von einer einzelnen Stadt bis hin zu einer ganzen Nation. Auch die Reaktion auf bestimmte Handlungen ist unterschiedlich",
+			optionen: [{
+				name: "Stadt",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "hat sehr verschiedene Einwohner. Die meisten leben relativ friedlich in einer vielfältigen Gemeinschaft zusammen"
+			}, {
+				name: "Festung",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "beherbergt in der Regel Angehörige des Militärs, die als Miliz oder sogar als stehendes Heer dienen"
+			}, {
+				name: "Stamm",
+				geschlecht: "maskulinum",
+				adjektiv: "nomadische",
+				präfix: "",
+				suffix: "",
+				text: "besteht aus einer Gesellschaft, die nicht in festen Siedlungen leben, sondern, den Wanderungen der Tiere oder den Jahreszeiten folgend, durch die Welt zieht"
+			}, {
+				name: "Nation",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann aus einem einzigen Volk bestehen oder ein Schmelztiegel vieler Völker mit einer einzigen Kultur oder einer Vielzahl von Kulturen sein"
+			}]
+		}, {
+			name: "Person",
+			geschlecht: "femininum",
+			adjektiv: "mächtige",
+			präfix: "",
+			suffix: "",
+			text: "gibt es in allen Formen und Farben, und sie hat unterschiedliche Auswirkungen auf die Gesellschaft, der sie angehört",
+			optionen: [{
+				name: "Herrscher",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist jemand, der eine Gesellschaft regiert und kann allein handeln oder Teil einer größeren Regierung sein"
+			}, {
+				name: "Befehlshaber",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein militärischer Führer, der eine Armee oder eine Miliz befehligt"
+			}, {
+				name: "Zauberwirker",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine Person, die in der Lage ist, meisterhaft Magie zu wirken"
+			}, {
+				name: "Hohepriester",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine Verbindungsperson zu den Göttern und erlangt Macht durch seine Verbindung mit dem Göttlichen"
+			}]
+		}, {
+			name: "Artefakt",
+			geschlecht: "neutrum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist ein magischer Gegenstände von ungeheurer Kraft, ist oft einzigartig und hat eine mythische Geschichte",
+			optionen: [{
+				name: "Waffe",
+				geschlecht: "femininum",
+				adjektiv: "magische",
+				präfix: "",
+				suffix: "",
+				text: "kann sowohl für das Böse als auch für das Gute eingesetzt werden und besitzt Kräfte, die über einfache Verstärkungen hinausgehen"
+			}, {
+				name: "Rüstung",
+				geschlecht: "femininum",
+				adjektiv: "magische",
+				präfix: "",
+				suffix: "",
+				text: "von großer Macht wird normalerweise in einem Set geliefert, das zusammen getragen weitere Kräfte freischaltet"
+			}, {
+				name: "Gegenstand",
+				geschlecht: "maskulinum",
+				adjektiv: "wundersame",
+				präfix: "",
+				suffix: "",
+				text: "kann eine Tasche, Schmuck, ein Gürtel, Instrumente, Figuren oder ein Handschuh sein und hat oft unvorhersehbare Wirkungen"
+			}, {
+				name: "Reliquie",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein magischer Gegenstand, der die Kraft des Göttlichen kanalisiert und kann in der Regel nur von Personen benutzt werden, die der entsprechenden Gottheit geweiht sind"
+			}]
+		}, {
+			name: "Kreatur",
+			geschlecht: "femininum",
+			adjektiv: "legendäre",
+			präfix: "",
+			suffix: "",
+			text: "zeichnet sich dadurch aus, dass ihre Aktivitäten das Leben der Sterblichen auf erstaunliche Weise verändern können. Sie handelt oft in einer Weise, die dem Leben der Sterblichen nützt oder es zumindest berücksichtigt",
+			optionen: [{
+				name: "Riese",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "lebt in einer eigenen Gesellschaft, arbeitet aber manchmal mit den kleineren Völkern zusammen, um deren Leben zu verbessern. Wie die Menschen haben auch die Riesen verschiedene Orientierungen und führen ein komplexes Leben"
+			}, {
+				name: "Einhorn",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kommuniziert nur gelegentlich mit den Sterblichen, wenn er Botschaften überbringt oder Orte beschützen muss"
+			}, {
+				name: "Feenwesen",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "bewegt sich an der Grenze zwischen Gut und Böse. Es arbeitet oft mit Sterblichen bei Pakten und Feierlichkeiten zusammen"
+			}, {
+				name: "Sphinx",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist in der Regel guter Gesinnung, aber manchmal zu weit von der Gesellschaft der Sterblichen entfernt, um die Konsequenzen ihrer Urteile zu erkennen"
+			}]
+		}, {
+			name: "Tor",
+			geschlecht: "neutrum",
+			adjektiv: "planare",
+			präfix: "",
+			suffix: "",
+			text: "kann sich in Abhängigkeit von Ritualen oder anderen Situationen öffnen und schließen und seltsame Auswirkungen auf ihre Benutzer haben",
+			optionen: [{
+				name: "Tor",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "zur elementaren Ebene",
+				text: "manifestiert das Element, mit dem es verbunden ist; das können Feuerkugeln oder Luftwirbel sein"
+			}, {
+				name: "Tor",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "zur Schattenwelt",
+				text: "dringt durch rauchende Teiche der Dunkelheit in das Reich der Sterblichen ein"
+			}, {
+				name: "Tor",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "zum Reich der Wildnis",
+				text: "erscheint nur an wilden Orten, beispielsweise in Löchern in Baumstämmen oder in Ringen von Fliegenpilzen auf versteckten Lichtungen"
+			}, {
+				name: "Tor",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "in die Höllen",
+				text: "stinkt nach Schwefeldämpfen und bietet Teufeln die Möglichkeit, durch es zu reisen"
+			}]
+		}, {
+			name: "Armee",
+			geschlecht: "femininum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "kann zwischen zehn- und hunderttausend Mann stark sein und besteht in der Regel aus trainierten Rekruten, die körperlich stark und kriegserfahren sind",
+			optionen: [{
+				name: "Horde",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "stellt die die Anzahl der Kämpfer in den Vordergrund; sie besteht aus einer großen Zahl eifriger, aber schlecht bewaffneter Krieger"
+			}, {
+				name: "Legion",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist organisiert, stoisch und arbeitet gut im Team, um ihre Feinde zu dezimieren. Die Angehörigen einer Legion sind gut ausgebildet und kampfbereit"
+			}, {
+				name: "Guerillatruppe",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist eine kleine Gefechtsgruppe und arbeitet mit Angriffs- und Rückzugstaktiken, um die Kräfte und die Energie des Gegners langsam zu erschöpfen"
+			}, {
+				name: "Eliteeinheit",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist zahlenmäßig klein (vielleicht nur ein paar Dutzend), besteht aber aus hochqualifizierten Soldaten, die in der Lage sind, das Zehnfache ihrer eigenen Zahl zu besiegen"
+			}]
+		}, {
+			name: "Ebenbürtige",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: `ist jemand, der ${declinedAkteurOption.dativ} in gewisser Weise gleichgestellt ist`,
+			optionen: [{
+				name: "Ebenbürtige",
+				geschlecht: "maskulinum",
+				adjektiv: "gleichgestellte",
+				präfix: "finanziell",
+				suffix: "",
+				text: `ist jemand, der eine ähnliche Menge Gold wie ${declinedAkteurOption.nominativ} besitzt. Dazu können auch Güter wie Immobilien oder Unternehmen gehören`
+			}, {
+				name: "Ebenbürtige",
+				geschlecht: "maskulinum",
+				adjektiv: "machtgleiche",
+				präfix: "",
+				suffix: "",
+				text: `ist jemand, der auf dem Schlachtfeld ein ebenbürtiger für ${declinedAkteurOption.akkusativ} Gegner wäre. Dazu können Armeen oder Gefolgsleute unter seinem Kommando gehören`
+			}, {
+				name: "Ebenbürtige",
+				geschlecht: "maskulinum",
+				adjektiv: "gleichgestellte",
+				präfix: "magisch",
+				suffix: "",
+				text: `ist eine Person, die eine ähnliche Macht über das Arkane besitzt, wie ${declinedAkteurOption.nominativ}. Dies kann direkt bedeuten, dass sie auf einer ähnlichen Stufe steht oder die Fähigkeit besitzt, Zauber mit einem ähnlichen Grad zu wirken`
+			}, {
+				name: "Ebenbürtige",
+				geschlecht: "maskulinum",
+				adjektiv: "ansehensgleiche",
+				präfix: "",
+				suffix: "",
+				text: `ist ein Individuum, das in der Gesellschaft ein ähnliches Ansehen genießt wie ${declinedAkteurOption.nominativ}. Dieses Ansehen kann gut oder schlecht sein, solange es gleichwertig ist`
+			}]
+		}, {
+			name: "Rivale",
+			geschlecht: "maskulinum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: `ist jemand, mit ${declinedAkteurOption.dativ} in irgendeiner Weise konkurriert, oft mit einer gewissen Feindseligkeit und einer gemeinsamen Vergangenheit`,
+			optionen: [{
+				name: "Rivale",
+				geschlecht: "maskulinum",
+				adjektiv: "persönliche",
+				präfix: "",
+				suffix: "",
+				text: `kommt mit ${declinedAkteurOption.dativ} nicht aus und ${declinedAkteurOption.nominativ} nicht mit ihm. Vielleicht haben beide denselben Partner oder sind einfach gegensätzliche Persönlichkeiten`
+			}, {
+				name: "Rivale",
+				geschlecht: "maskulinum",
+				adjektiv: "politische",
+				präfix: "",
+				suffix: "",
+				text: `ist der politische Rivale ${declinedAkteurOption.genitiv}. Sie sind sich in Fragen der Regierungsführung nicht einig oder beide konkurrieren um die gleiche Position`
+			}, {
+				name: "Rivale",
+				geschlecht: "maskulinum",
+				adjektiv: "wirtschaftliche",
+				präfix: "",
+				suffix: "",
+				text: `ist von ${declinedAkteurOption.dativ} durch ein Wohlstandgefälle separiert. Vielleicht hat einer den anderen bestohlen, sein Geschäft ruiniert oder ist ein direkter Konkurrent`
+			}, {
+				name: "Rivale",
+				geschlecht: "maskulinum",
+				adjektiv: "magische",
+				präfix: "",
+				suffix: "",
+				text: `steht mit ${declinedAkteurOption.dativ} auf Grund von Magie in Konkurrenz, beispielsweise durch Verzauberung, oder durch das Bestreben, sich gegenseitig zu übertreffen`
+			}]
+		}, {
+			name: "Regierung",
+			geschlecht: "femininum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "ist eine Person oder eine Gruppe, die eine Nation oder eine Fraktion nach bestimmten Gesetzen regiert",
+			optionen: [{
+				name: "Regierung",
+				geschlecht: "femininum",
+				adjektiv: "theokratische",
+				präfix: "",
+				suffix: "",
+				text: "wird von einem direkten Vertreter oder einer Gruppe von Vertretern einer Gottheit oder von einer Gottheit selbst geführt"
+			}, {
+				name: "Regierung",
+				geschlecht: "femininum",
+				adjektiv: "diktatorische",
+				präfix: "",
+				suffix: "",
+				text: "hat einen einzigen Herrscher, der die absolute Macht besitzt, aber seine Herrschaft ist nicht notwendigerweise eine Dynastie"
+			}, {
+				name: "Regierung",
+				geschlecht: "femininum",
+				adjektiv: "demokratische",
+				präfix: "",
+				suffix: "",
+				text: "wird von den Bürger oder den gewählten Vertreter bestimmt"
+			}, {
+				name: "Regierung",
+				geschlecht: "femininum",
+				adjektiv: "republikanische",
+				präfix: "",
+				suffix: "",
+				text: "wird Vertretern einer bestimmten Wählerschaft anvertraut, die im Namen einer bestimmten Klasse von Wählern regieren"
+			}]
+		}, {
+			name: "Kriegsmaschine",
+			geschlecht: "femininum",
+			adjektiv: "",
+			präfix: "",
+			suffix: "",
+			text: "macht den Krieg für denjenigen leichter, der sie besitzt",
+			optionen: [{
+				name: "Belagerungsmaschine",
+				geschlecht: "femininum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist ein rein mechanisches Geschöpf, das zur besseren Zerstörung von Siedlungen dient und ein Trebuchet, Rammbock und dergleichen sein kann"
+			}, {
+				name: "Golem",
+				geschlecht: "maskulinum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "ist in der Regel eine humanoide Gestalt aus Eisen, Stein, Lehm oder Fleisch, die durch Magie zum Leben erweckt wird"
+			}, {
+				name: "Fahrzeug",
+				geschlecht: "neutrum",
+				adjektiv: "",
+				präfix: "",
+				suffix: "",
+				text: "kann ein profanes Fahrzeug wie eine Belagerungsmaschine oder ein Schiff sein, aber es kann auch ein magisches Fahrzeug sein, wie eine Höllenmaschine"
+			}, {
+				name: "Maschine",
+				geschlecht: "femininum",
+				adjektiv: "lebendige",
+				präfix: "",
+				suffix: "",
+				text: "ist eine gewöhnliche Maschine, die mit magischem Leben oder sogar mit Gefühlen ausgestattet ist und aus eigener Kraft Krieg führen kann"
+			}]
+		}, {
+			name: "Orden",
+			geschlecht: "maskulinum",
+			adjektiv: "religiöse",
+			präfix: "",
+			suffix: "",
+			text: "ist eine Gruppe von Personen, die sich zu einem bestimmten Glauben, seinen Praktiken, seiner Philosophie und seiner Wahrheit bekennt",
+			optionen: [{
+				name: "Orden",
+				geschlecht: "maskulinum",
+				adjektiv: "religiöse",
+				präfix: "",
+				suffix: "des Lebens",
+				text: "ist eine Kirche, die sich der Bewahrung und Wiederherstellung des Lebens widmet. Häufig mit Klerikern besetzt, die Heil- und Bannmagie beherrschen"
+			}, {
+				name: "Orden",
+				geschlecht: "maskulinum",
+				adjektiv: "religiöse",
+				präfix: "",
+				suffix: "des Lichts",
+				text: "ist ein Tempel, der direkt der Sonne, dem Mond oder den Sternen oder philosophisch der Idee von Erleuchtung, Offenbarung und Transparenz gewidmet ist"
+			}, {
+				name: "Orden",
+				geschlecht: "maskulinum",
+				adjektiv: "religiöse",
+				präfix: "",
+				suffix: "der Natur",
+				text: "ist ein Kreis gleichgesinnter Personen aus allen Lebensbereichen, die sich für den Erhalt der Natur, der Umwelt, der Tiere, Pflanzen und der natürlichen Kreisläufe einsetzen"
+			}, {
+				name: "Orden",
+				geschlecht: "maskulinum",
+				adjektiv: "religiöse",
+				präfix: "",
+				suffix: "des Gesetzes",
+				text: "ist ein Orden, der sich der Einhaltung bestimmter Gesetze verschrieben hat, sei es als Moralkodex oder als Teil eines strikten Rechtssystems"
+			}]
+		}, {
+			name: "Feind",
+			geschlecht: "maskulinum",
+			adjektiv: "schreckliche",
+			präfix: "",
+			suffix: "",
+			text: `ist ein mächtiger Feind, dessen Macht mindestens gleich groß oder größer als die des Feindes ist`,
+			optionen: [{
+				name: "Kriegsherr",
+				geschlecht: "maskulinum",
+				adjektiv: "feindliche",
+				präfix: "",
+				suffix: "",
+				text: `ist ein mächtiger Feind, dessen Macht mindestens gleich groß oder größer als die des Gegners ist. Bei dem feindlichen Kriegsherren handelt es sich um ${declinedFeindlicherKriegsherr.akkusativEin}. ${declinedFeindlicherKriegsherr.nominativPersonalpronomen} ${feindlicherKriegsherrText}`
+			}, {
+				name: "Monster",
+				geschlecht: "neutrum",
+				adjektiv: "feindliche",
+				präfix: "",
+				suffix: "",
+				text: `ist ein weltbeherrschendes Ungeheuer, dessen Entscheidungen die Realitäten aller anderen Lebewesen verändern. Bei dem feindlichen Monster handelt es sich um ${declinedFeindlichesMonster.akkusativEin}. ${declinedFeindlichesMonster.nominativPersonalpronomen} ${feindlichesMonsterText}`
+			}, {
+				name: "Drache",
+				geschlecht: "maskulinum",
+				adjektiv: "feindliche",
+				präfix: "",
+				suffix: "",
+				text: `ist ein wahrhaft monumentaler alter Wyrm, fähig zu Taten immenser Verwüstung und seelenrettender Nächstenliebe. Bei dem feindlichen Drachen handelt es sich um ${declinedFeindlicherDrache.akkusativEin}. ${declinedFeindlicherDrache.nominativPersonalpronomen} ${feindlicherDracheText}`,
+			}, {
+				name: "Unhold",
+				geschlecht: "maskulinum",
+				adjektiv: "feindliche",
+				präfix: "",
+				suffix: "",
+				text: `ist das inkarniertes Böse in physischer Form, das von rechtschaffen bis chaotisch reichen kann. Bei dem feindlichen Unhold handelt es sich um ${declinedFeindlicherUnhold.akkusativEin}. ${declinedFeindlicherUnhold.nominativPersonalpronomen} ${feindlicherUnholdText}`,
+				}]
+		},];
+	
+		// Funktion, um einen zufälligen Text aus einem Array auszuwählen
+		function getRandomText(arr) {
+			const index = Math.floor(Math.random() * arr.length);
+			return arr[index];
+		}
+			
+		// Bestimmt das Geschlecht für das Ziel und führt Variablendeklarationen und Zuweisungen für Ziele durch
+		const zielData = getRandomText(ziele);
+		const zielName = zielData.name;
+		const zielGeschlecht = zielData.geschlecht;
+		const zielAdjektiv = zielData.adjektiv;
+		const zielText = zielData.text;
+		const zielPräfix = zielData.präfix;
+		const zielSuffix = zielData.suffix;
+		const zielOption = getRandomOption(zielData.optionen);
+		const zielOptionName = zielOption.name;
+		const zielOptionGeschlecht = zielOption.geschlecht;
+		const zielOptionAdjektiv = zielOption.adjektiv;
+		const zielOptionPräfix = zielOption.präfix;
+		const zielOptionSuffix = zielOption.suffix;
+		const zielOptionText = zielOption.text;
+	
+		// Funktion zum Erzeugen der verschiedenen Fälle eines Substantivs
+		function declineNoun(noun, gender, adjectiv, prefix, suffix, text) {
+			const endsWithE = noun.endsWith('e');
+			const endsWithT = noun.endsWith('t');
+			const endsWithD = noun.endsWith('d');
+			const endsWithS = noun.endsWith('s');
+			const endsWithZ = noun.endsWith('z');
+			const endsWithCh = noun.endsWith('ch');
+	
+			// Überprüfe, ob das Nomen eine schwache Deklination hat
+			if (nomenSchwacheDeklination.includes(noun)) {
+	
+				// Deklinationsregeln für Adjektive und Nomen mit schwacher Deklination
+				const nounCases = {
+					maskulinum: {
+						nominativ: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: endsWithE ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						dativ: endsWithE ? 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' : 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						akkusativ: endsWithE ? 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: endsWithE ? 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'r ' : '') + noun + 'r' + (suffix ? ' ' + suffix : ''): 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'r ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: endsWithE ? 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						dativEin: endsWithE ? 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+						akkusativEin: endsWithE ? 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'en' + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'der',
+						genitivBestimmterArtikel: 'des',
+						dativBestimmterArtikel: 'dem',
+						akkusativBestimmterArtikel: 'den',
+	
+						nominativPersonalpronomen: 'er',
+						genitivPersonalpronomen: 'seiner',
+						dativPersonalpronomen: 'ihm',
+						akkusativPersonalpronomen: 'ihn',
+	
+						nominativWelcher: 'welcher',
+						genitivWelcher: 'welches',
+						dativWelcher: 'welchem',
+						akkusativWelcher: 'welchen',
+	
+						nominativPossesivpronomenMaskulinum: 'sein',
+						genitivPossesivpronomenMaskulinum: 'seines',
+						dativPossesivpronomenMaskulinum: 'seinem',
+						akkusativPossesivpronomenMaskulinum: 'seinen',
+	
+						nominativPossesivpronomenFemininum: 'seine',
+						genitivPossesivpronomenFemininum: 'seiner',
+						dativPossesivpronomenFemininum: 'seiner',
+						akkusativPossesivpronomenFemininum: 'seine',
+	
+						nominativPossesivpronomenNeutrum: 'sein',
+						genitivPossesivpronomenNeutrum: 'seines',
+						dativPossesivpronomenNeutrum: 'seinem',
+						akkusativPossesivpronomenNeutrum: 'sein',
+	
+						nominativPossesivpronomenPlural: 'seine',
+						genitivPossesivpronomenPlural: 'seiner',
+						dativPossesivpronomenPlural: 'seinen',
+						akkusativPossesivpronomenPlural: 'seine',
+					},
+				};
+				return nounCases[gender];
+			} else {
+				// Normale Deklinationsregeln für Adjektive und Nomen ohne schwache Deklination
+				const nounCases = {
+					maskulinum: {
+						nominativ: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: endsWithE ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): endsWithT ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): endsWithS ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): endsWithZ ? 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativ: endsWithE ? 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativ: endsWithE ? 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'den ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'r ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: endsWithE ? 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): endsWithT ? 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'es' + (suffix ? ' ' + suffix : ''): 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativEin: endsWithE ? 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativEin: endsWithE ? 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 'n' + (suffix ? ' ' + suffix : ''): 'einen ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'der',
+						genitivBestimmterArtikel: 'des',
+						dativBestimmterArtikel: 'dem',
+						akkusativBestimmterArtikel: 'den',
+	
+						nominativPersonalpronomen: 'er',
+						genitivPersonalpronomen: 'seiner',
+						dativPersonalpronomen: 'ihm',
+						akkusativPersonalpronomen: 'ihn',
+	
+						nominativWelcher: 'welcher',
+						genitivWelcher: 'welches',
+						dativWelcher: 'welchem',
+						akkusativWelcher: 'welchen',
+	
+						nominativPossesivpronomenMaskulinum: 'sein',
+						genitivPossesivpronomenMaskulinum: 'seines',
+						dativPossesivpronomenMaskulinum: 'seinem',
+						akkusativPossesivpronomenMaskulinum: 'seinen',
+	
+						nominativPossesivpronomenFemininum: 'seine',
+						genitivPossesivpronomenFemininum: 'seiner',
+						dativPossesivpronomenFemininum: 'seiner',
+						akkusativPossesivpronomenFemininum: 'seine',
+	
+						nominativPossesivpronomenNeutrum: 'sein',
+						genitivPossesivpronomenNeutrum: 'seines',
+						dativPossesivpronomenNeutrum: 'seinem',
+						akkusativPossesivpronomenNeutrum: 'sein',
+	
+						nominativPossesivpronomenPlural: 'seine',
+						genitivPossesivpronomenPlural: 'seiner',
+						dativPossesivpronomenPlural: 'seinen',
+						akkusativPossesivpronomenPlural: 'seine',
+					},
+					femininum: {
+						nominativ: 'die ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						dativ: 'der ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativ: 'die ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: 'eine ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: 'einer ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						dativEin: 'einer ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativEin: 'eine ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'die',
+						genitivBestimmterArtikel: 'der',
+						dativBestimmterArtikel: 'der',
+						akkusativBestimmterArtikel: 'die',
+	
+						nominativPersonalpronomen: 'sie',
+						genitivPersonalpronomen: 'ihrer',
+						dativPersonalpronomen: 'ihr',
+						akkusativPersonalpronomen: 'sie',
+	
+						nominativWelcher: 'welche',
+						genitivWelcher: 'welcher',
+						dativWelcher: 'welcher',
+						akkusativWelcher: 'welche',
+	
+						nominativPossesivpronomenMaskulinum: 'ihr',
+						genitivPossesivpronomenMaskulinum: 'ihres',
+						dativPossesivpronomenMaskulinum: 'ihrem',
+						akkusativPossesivpronomenMaskulinum: 'ihren',
+	
+						nominativPossesivpronomenFemininum: 'ihre',
+						genitivPossesivpronomenFemininum: 'ihrer',
+						dativPossesivpronomenFemininum: 'ihrer',
+						akkusativPossesivpronomenFemininum: 'ihre',
+	
+						nominativPossesivpronomenNeutrum: 'ihr',
+						genitivPossesivpronomenNeutrum: 'ihres',
+						dativPossesivpronomenNeutrum: 'ihrem',
+						akkusativPossesivpronomenNeutrum: 'ihr',
+	
+						nominativPossesivpronomenPlural: 'ihre',
+						genitivPossesivpronomenPlural: 'ihrer',
+						dativPossesivpronomenPlural: 'ihren',
+						akkusativPossesivpronomenPlural: 'ihre',
+					},
+					neutrum: {
+						nominativ: 'das ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitiv: 'des ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativ: 'dem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativ: 'das ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + ' ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativEin: 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 's ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						genitivEin: 'eines ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + 's' + (suffix ? ' ' + suffix : ''),
+						dativEin: 'einem ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 'n ' : '') + noun + (suffix ? ' ' + suffix : ''),
+						akkusativEin: 'ein ' + (prefix ? prefix + ' ' : '') + (adjectiv ? adjectiv + 's ' : '') + noun + (suffix ? ' ' + suffix : ''),
+	
+						nominativBestimmterArtikel: 'das',
+						genitivBestimmterArtikel: 'des',
+						dativBestimmterArtikel: 'dem',
+						akkusativBestimmterArtikel: 'das',
+	
+						nominativPersonalpronomen: 'es',
+						genitivPersonalpronomen: 'seiner',
+						dativPersonalpronomen: 'ihm',
+						akkusativPersonalpronomen: 'es',
+	
+						nominativWelcher: 'welches',
+						genitivWelcher: 'welchen',
+						dativWelcher: 'welchem',
+						akkusativWelcher: 'welches',
+	
+						nominativPossesivpronomenMaskulinum: 'sein',
+						genitivPossesivpronomenMaskulinum: 'seines',
+						dativPossesivpronomenMaskulinum: 'seinem',
+						akkusativPossesivpronomenMaskulinum: 'seinen',
+	
+						nominativPossesivpronomenFemininum: 'seine',
+						genitivPossesivpronomenFemininum: 'seiner',
+						dativPossesivpronomenFemininum: 'seiner',
+						akkusativPossesivpronomenFemininum: 'seine',
+	
+						nominativPossesivpronomenNeutrum: 'sein',
+						genitivPossesivpronomenNeutrum: 'seines',
+						dativPossesivpronomenNeutrum: 'seinem',
+						akkusativPossesivpronomenNeutrum: 'sein',
+	
+						nominativPossesivpronomenPlural: 'seine',
+						genitivPossesivpronomenPlural: 'seiner',
+						dativPossesivpronomenPlural: 'seinen',
+						akkusativPossesivpronomenPlural: 'seine',
+					}
+				};
+				return nounCases[gender];
+			}
+		} 
+		//Erstell die Konstante für deklinierte Zielnomen
+		const declinedZiel = declineNoun(zielName, zielGeschlecht, zielAdjektiv, zielPräfix, zielSuffix, zielText );
+		const declinedZielOption = declineNoun(zielOptionName, zielOptionGeschlecht, zielOptionAdjektiv, zielOptionPräfix, zielOptionSuffix, zielOptionText);
+	
+		// Abschnitt Aktionen und entsprechende Begriffe für den Questgenerator
+		const aktionen = [{
+			name: `die Beherrschung ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativEin} beherrschen`,
+			beschreibung: `Herrschaft ist der Akt totaler Unterdrückung, der einer Gruppe oder einem Individuum die Kontrolle über das eigene Leben entzieht und die Freiheit einschränkt`,
+			optionen: [{
+				name: `${declinedZielOption.nominativPersonalpronomen} wird von ${declinedAkteurOption.dativ} militärisch beherrscht werden`,
+				text: `Militärische Herrschaft wird in der Regel mit Gewalt ausgeübt. Sie kann die Auslöschung einer ganzen Kultur oder deren Versklavung bedeuten`
+			}, {
+				name: `${declinedZielOption.nominativPersonalpronomen} wird von ${declinedAkteurOption.dativ} sozial beherrscht werden`,
+				text: `Soziale Herrschaft bedeutet, dass eine Kultur über eine andere herrscht und langsam daran arbeitet, deren Existenz zu untergraben`
+			}, {
+				name: `${declinedZielOption.nominativPersonalpronomen} wird von ${declinedAkteurOption.dativ} magisch beherrscht werden`,
+				text: `Magische Beherrschung bezieht sich normalerweise entweder auf die unmoralische Anwendung von Verzauberung, um Freiheit zu nehmen, oder auf Transmutation, um die Natur des Subjekts zu verändern`
+			}, {
+				name: `${declinedZielOption.nominativPersonalpronomen} wird von ${declinedAkteurOption.dativ} geographisch beherrscht werden`,
+				text: `Geographische Herrschaft ist die Beschränkung eines Volkes oder einer Kultur auf ein bestimmtes Territorium durch politische oder topographische Mittel`
+			}]
+		}, {
+			name: `die Zerstörung ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativEin} zerstören`,
+			beschreibung: `Zerstören heißt die Existenz auslöschen. Mord ist manchmal nur ein Teil dieser Auslöschung`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} töten`,
+				text: `Der Tod entlässt das Ziel aus der materiellen Ebene. Aber das ist vielleicht erst der Anfang. Er entfernt die Sterblichen von einem Ort und schickt sie an einen anderen`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} auslöschen`,
+				text: `Jede Spur ${declinedZielOption.genitiv} wird vollständig aus der Realität und der Geschichte entfernt. Auch die Erinnerungen an ${declinedZielOption.akkusativPersonalpronomen} werden verschwinden`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} entblößen`,
+				text: `Alles, was von ${declinedZielOption.dativ} übrig bleibt, ist ${declinedZielOption.genitivPossesivpronomenFemininum} physische Gestalt; alles andere wird auf magische oder psychologische Weise entfernt`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird den Körper ${declinedZielOption.genitiv} wie eine Marionette kontrollieren`,
+				text: `Es bleibt nur die Hülle des Originals, dessen Innereien durch die des Puppenspielers ersetzt werden`
+			}]
+		}, {
+			name: `die Unterwerfung ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativEin} unterwerfen`,
+			beschreibung: `Jemanden zu unterwerfen bedeutet, ihn zur Loyalität zu zwingen oder ihn unter Kontrolle zu bringen`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} durch Versklavung unterwerfen`,
+				text: `${declinedZielOption.nominativPersonalpronomen} wird in den Besitz einer anderen Person gezwungen`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} durch Verzauberung unterwerfen`,
+				text: `Mit Magie wird der freie Wille ${declinedZielOption.genitiv} unterdrückt`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} durch Bezwingung unterwerfen`,
+				text: `Die Hoffnung ${declinedZielOption.genitiv} und jede Macht, die ${declinedZielOption.akkusativPersonalpronomen} schützt, wird zerstört`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.akkusativ} durch Hegemoniesierung unterwerfen`,
+				text: `${declinedZielOption.nominativPersonalpronomen} wird einer dominanten politischen oder sozialen Macht ausgesetzt, die ${declinedZielOption.akkusativPersonalpronomen} schließlich beeinflusst`
+			}]
+		}, {
+			name: `die Einflößung von Angst bei ${declinedZielOption.dativ}`,
+			text: `${declinedZiel.dativEin} Angst einflößen`,
+			beschreibung: `Die Erzeugung und Aufrechterhaltung extremer Angst bei ${declinedZielOption.dativ}, um einen bestimmten Effekt zu erzielen`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.dativ} durch Einschüchterung Angst einflößen`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} wird dies erreichen, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.dativ} Aggression oder Gewalt androht`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.dativ} durch Erpressung Angst einflößen`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} wird dies erreichen, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.dativ} frühere Fehltritte vorhält`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.dativ} durch Erzwingung Angst einflößen`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} wird dies erreichen, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.dativ} droht und so ${declinedZielOption.nominativPossesivpronomenPlural} Reichtümer erlangt`
+			}, {
+				name: `${declinedAkteurOption.nominativ} wird ${declinedZielOption.dativ} durch Terrorismus Angst einflößen`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} wird dies erreichen, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativ} in einen Zustand des blanken Terrors versetzt`
+			}]
+		}, {
+			name: `die Manipulation ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativEin} manipulieren`,
+			beschreibung: `${declinedAkteurOption.akkusativ} will ${declinedZielOption.akkusativ} mit anderen Mitteln als Gewalt dazu zwingen, das zu tun, was ${declinedAkteurOption.nominativPersonalpronomen} will. Dies ist ein mächtiges Instrument, insbesondere wenn ${declinedZielOption.nominativ} glaubt, dass die Ideen, die ${declinedZielOption.nominativPersonalpronomen} hat, ${declinedZielOption.nominativPossesivpronomenPlural} eigenen sind`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} unterzieht ${declinedZielOption.dativ} einer Gehirnwäsche`,
+				text: `Ob durch Verzauberungen, Gehirnwürmer oder reines Charisma, Gehirngewaschene tun widerstandslos alles, was von ihnen verlangt wird`
+			}, {
+				name: `${declinedAkteurOption.nominativ} besticht ${declinedZielOption.akkusativ}`,
+				text: `Das Anbieten von Reichtum als Gegenleistung ist eine der einfachsten Methoden, um gierige oder bedürftige Personen zu manipulieren`
+			}, {
+				name: `${declinedAkteurOption.nominativ} macht ${declinedZielOption.dativ} leere Versprechen`,
+				text: `Charismatische Personen können anderen das Blaue vom Himmel versprechen und sie so lange bei der Stange halten, bis sie bekommen, was sie wollen`
+			}, {
+				name: `${declinedAkteurOption.nominativ} schließt mit ${declinedZielOption.dativ} einen dunklen Pakt ab`,
+				text: `Mächtige Individuen können mit Sterblichen Geschäfte abschließen, von denen beide Seiten zumindest kurzfristig zu profitieren scheinen`
+			}]
+		}, {
+			name: `die Befehligung ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativEin} befehligen`,
+			beschreibung: `Bei einem Befehl handelt es sich um eine Aufgabe, die aus dem einen oder anderen Grund ausgeführt werden muss. Er ist in der Regel für ${declinedAkteurOption.akkusativ} und nicht für ${declinedZielOption.akkusativ} vorteilhaft und kann nicht ignoriert werden`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} befehligt ${declinedZielOption.akkusativ} per Dekret`,
+				text: `Der Erlass von Gesetzen übt einen starken Druck auf ${declinedZielOption.akkustiv} aus, sich anzupassen und sich so zu verhalten, wie es ${declinedAkteurOption.nominativ} für wünschenswert hält`
+			}, {
+				name: `${declinedAkteurOption.nominativ} befehligt ${declinedZielOption.akkusativ} durch Suggestion`,
+				text: `Suggestive Zaubersprüche können ${declinedZielOption.akkusativ} dazu zwingen, Dinge zu tun, die ${declinedZielOption.nominativPersonalpronomen} normalerweise nicht tun würden`
+			}, {
+				name: `${declinedAkteurOption.nominativ} befehligt ${declinedZielOption.akkusativ} unter Andwendung von Zwang`,
+				text: `Die ständige Androhung von Gewalt zwingt ${declinedZielOption.akkust}, den Befehl auszuführen. Andernfalls wird ${declinedZielOption.nominativPersonalpronomen} getötet`
+			}, {
+				name: `${declinedAkteurOption.nominativ} befehligt ${declinedZielOption.akkusativ} mit Hilfe eines magischen Gegenstands`,
+				text: `Einige magische Gegenstände haben die Fähigkeit, ${declinedZielOption.dativ} Befehle zu erteilen, die nicht ignoriert oder missachtet werden können`
+			}]
+		}, {
+			name: `die Inbesitznahme ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativEin} besitzen`,
+			beschreibung: `Besitz kann bedeuten, Eigentum an etwas zu erwerben. Es kann sich aber auch auf den Geist ${declinedAkteurOption.genitiv} beziehen, der sich in ${declinedZielOption.dativ} manifestiert`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativPersonalpronomen} nimmt ${declinedZielOption.akkusativ} in Besitz, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen} heimsucht`,
+				text: `Auf irgendeine Weise, magisch oder gewöhnlich, sucht ${declinedAkteurOption.nominativ} ${declinedZielOption.akkusativ} heim. ${declinedAkteurOption.nominativPersonalpronomen} kann ${declinedZielOption.akkusativPersonalpronomen} ständig beobachten oder in ${declinedZielOption.akkusativPossesivpronomenMaskulinum} Geist direkt eingreifen`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} nimmt ${declinedZielOption.akkusativ} in Besitz, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen} erwirbt`,
+				text: `${declinedAkteurOption.dativ} gelingt es, ${declinedZielOption.akkusativ} zu erwerben. ${declinedZielOption.nominativPersonalpronomen} kann gekauft, gefangen genommen oder sogar versklavt werden`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} nimmt ${declinedZielOption.akkusativ} in Besitz, in dem ${declinedAkteurOption.nominativPersonalpronomen} sich in ${declinedZielOption.dativPossesivpronomenMaskulinum} Geist manifestiert`,
+				text: `Der Geist ${declinedAkteurOption.genitiv} dringt buchstäblich in ${declinedZielOption.akkusativ} ein und übernimmt die Kontrolle. `
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} nimmt ${declinedZielOption.akkusativ} in Besitz, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen} beeinflusst`,
+				text: `${declinedAkteurOption.nominativ} übt durch Propaganda oder andere Mittel so viel Druck auf ${declinedZielOption.akkusativ} aus, dass ${declinedAkteurOption.nominativPersonalpronomen} im Wesentlichen die Kontrolle über ${declinedZielOption.akkusativPersonalpronomen} hat`
+			}]
+		}, {
+			name: `die Verzauberung ${declinedZielOption.genitiv}`,
+			text: `${declinedZielOption.akkusativEin} verzaubern`,
+			beschreibung: `Eine Verzauberung kann von subtilen charismatischen Effekten bis zur völligen Beherrschung eines Ziels reichen und wird immer mit irgendeiner Form von Magie ausgeübt`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} verzaubert ${declinedZielOption.akkusativ} mit Hilfe einer charismatischen Verstärkung`,
+				text: `Eine kleine Verzauberung macht ${declinedZielOption.akkusativPersonalpronomen} für ${declinedAkteurOption.nominativ} empfänglich oder allgemein beeinflussbar`
+			}, {
+				name: `${declinedAkteurOption.nominativ} verzaubert ${declinedZielOption.akkusativ} augenblicklich`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} kann einen direkten Befehl geben, der von ${declinedZielOption.dativPersonalpronomen} sofort ausgeführt wird`
+			}, {
+				name: `${declinedAkteurOption.nominativ} verzaubert ${declinedZielOption.akkusativ} kurzfristig`,
+				text: `${declinedZielOption.dativPersonalpronomen} wird eine Idee eingepflanzt, die innerhalb des nächsten Jahres umgesetzt werden soll`
+			}, {
+				name: `${declinedAkteurOption.nominativ} verzaubert ${declinedZielOption.akkusativ} langfristig`,
+				text: `Eine anhaltende Beeinflussung veranlasst ${declinedZielOption.akkusativPersonalpronomen}, sich über einen längeren Zeitraum, länger als ein Jahr, in einer bestimmten Weise zu verhalten`
+			}]
+		}, {
+			name: `die Verwandlung ${declinedZielOption.genitiv}`,
+			text: `${declinedZielOption.akkusativEin} verwandeln`,
+			beschreibung: `${declinedZielOption.nominativPersonalpronomen} wird durch ${declinedAkteurOption.akkusativ} in etwas anderes verwandelt, als ${declinedZielOption.nominativPersonalpronomen} ursprünglich war und kann verstärkt oder vollständig und grundlegend verändert werden`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} verwandelt ${declinedZielOption.akkusativ} in Stein`,
+				text: `${declinedZielOption.nominativPersonalpronomen} wird in Stein verwandelt, bis ein Heilmittel gefunden wird. Das kann ein Zauberspruch, ein magischer Gegenstand oder ein Gegengift sein`
+			}, {
+				name: `${declinedAkteurOption.nominativ} verwandelt ${declinedZielOption.akkusativ} in ein Tier`,
+				text: `${declinedZielOption.nominativPersonalpronomen} wird in ein Tier verwandelt, bis ${declinedZielOption.nominativPersonalpronomen} eine bestimmte Aufgabe oder Herausforderung erfüllt, die in ${declinedZielOption.genitivPossesivpronomenFemininum} Tiergestalt normalerweise schwieriger wäre. `
+			}, {
+				name: `${declinedAkteurOption.nominativ} verwandelt ${declinedZielOption.akkusativ} in etwas Monströses`,
+				text: `${declinedZielOption.nominativPossesivpronomenFemininum} Persönlichkeit, ${declinedZielOption.nominativPossesivpronomenMaskulinum} Körper oder beides wird in eine monströse Abart des früheren Selbst verwandelt`
+			}, {
+				name: `${declinedAkteurOption.nominativ} verändert das Leben ${declinedZielOption.genitiv}`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} verleiht ${declinedZielOption.dativPersonalpronomen} ein hohes Ansehen in der Gesellschaft, Reichtum, große Stärke oder ein anderes Ereignis, welches das Leben oder die Existenz ${declinedZielOption.genitiv} verändert`
+			}]
+		}, {
+			name: `die Infiltration ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativ} infiltrieren`,
+			beschreibung: `${declinedAkteurOption.nominativ} mischt sich ein oder plaziert sich heimlich in der Gesellschaft oder in dem Umfeld ${declinedZielOption.genitiv}. Diskretion ist entscheidend`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativPersonalpronomen} infiltriert ${declinedZielOption.akkusativPersonalpronomen} mit Hilfe von Verkleidungen`,
+				text: `Indem ${declinedAkteurOption.nominativ} eine andere Gestalt annimmt, kann ${declinedAkteurOption.nominativPersonalpronomen} sich leicht in eine Gruppe einschleusen. Niemand kennt ${declinedAkteurOption.akkusativPossesivpronomenFemininum} wahre Identität`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} infiltriert ${declinedZielOption.akkusativPersonalpronomen} durch die Kunst der Überredung`,
+				text: `Durch Nötigung und Charme gewinnt ${declinedAkteurOption.nominativ} Einfluss`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} infiltriert ${declinedZielOption.akkusativPersonalpronomen} durch Erpressung`,
+				text: `${declinedAkteurOption.nominativ} hat Informationen, die, wenn sie veröffentlicht werden, ${declinedZielOption.akkusativ} zu Fall bringen würde. ${declinedAkteurOption.nominativPersonalpronomen} benutzt diese Informationen als Druckmittel, um sich Gehör zu verschaffen`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} infiltriert ${declinedZielOption.akkusativPersonalpronomen} durch Kontrolle`,
+				text: `Magischer Einfluss ermöglicht es ${declinedAkteurOption.dativ}, eine Gruppe zu infiltrieren und sich das Ohr derer zu verschaffen, die sich ihm sonst verweigern würden`
+			}]
+		}, {
+			name: `die Hintergehung ${declinedZielOption.genitiv}`,
+			text: `will ${declinedZiel.akkusativ} hintergehen`,
+			beschreibung: `Betrug ist, einem Verbündeten in den Rücken zu fallen, wenn er überzeugt ist, auf derselben Seite zu stehen`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativ} hintergeht ${declinedZielOption.akkusativ} auf dem Schlachtfeld`,
+				text: `${declinedAkteurOption.nominativ} nutzt das Chaos auf dem Schlachtfeld aus, um ${declinedZielOption.akkusativPersonalpronomen} oder ${declinedZielOption.nominativPossesivpronomenFemininum} Armee zu überwältigen`
+			}, {
+				name: `${declinedAkteurOption.nominativ} hintergeht ${declinedZielOption.akkusativ} im Kreis von Verbündeten`,
+				text: `Durch Verleumdung, Spott und dergleichen erniedrigt ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen}, ${declinedZielOption.nominativWelcher} sich von Freunden umgeben wähnt.`
+			}, {
+				name: `${declinedAkteurOption.nominativ} hintergeht ${declinedZielOption.akkusativ} in der Wildnis`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} wird ${declinedZielOption.dativPersonalpronomen} fernab der Zivilisation etwas antun, beispielsweise die Seile durchschneiden, die ${declinedZielOption.akkusativPersonalpronomen} am sicheren Absturz hindern, oder ${declinedZielOption.dativPersonalpronomen} eine Portion vergifteter Beeren unterjubeln`
+			}, {
+				name: `${declinedAkteurOption.nominativ} hintergeht ${declinedZielOption.akkusativ} geschäftlich`,
+				text: `${declinedAkteurOption.nominativPersonalpronomen} unterbietet, übervorteilt, übergeht oder verklagt ${declinedZielOption.akkusativPersonalpronomen} oder ${declinedZielOption.nominativPossesivpronomenNeutrum} Geschäft trotz vorheriger gütlicher Einigung`
+			}]
+		}, {
+			name: `die Bestechung ${declinedZielOption.genitiv}`,
+			text: `${declinedZiel.akkusativ} bestechen`,
+			beschreibung: `${declinedAkteurOption.nominativ} beeinflusst die Handlungen ${declinedZielOption.genitiv}, indem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.dativPersonalpronomen} eine Gegenleistung anbietet, der ${declinedZielOption.nominativPersonalpronomen} nur schwer widerstehen kann`,
+			optionen: [{
+				name: `${declinedAkteurOption.nominativPersonalpronomen} besticht ${declinedZielOption.akkusativPersonalpronomen} mit der Aussicht auf Reichtümer`,
+				text: `${declinedAkteurOption.nominativ} verspricht ${declinedZielOption.dativ} Reichtum in irgendeiner Form, seien es Goldmünzen, Meisterwerke, Geschäfte oder andere wertvolle Güter`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} besticht ${declinedZielOption.akkusativPersonalpronomen} mit der Aussicht auf Magie`,
+				text: `${declinedAkteurOption.nominativ} verspricht ${declinedZielOption.dativ} ein Ritual oder einen Zaubers zu ${declinedZielOption.genitivPossesivpronomenPlural} Gunsten, einen mächtigen magischen Gegenstand oder sogar Unterricht in einer bestimmten Schule des Arkanen`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} besticht ${declinedZielOption.akkusativPersonalpronomen} mit der Aussicht auf Macht`,
+				text: `${declinedAkteurOption.nominativ} verspricht ${declinedZielOption.dativ} eine Armee, den Kauf von Söldnern für eine bestimmte Sache oder sogar Waffen, Rüstungen oder Training für persönliche Macht`
+			}, {
+				name: `${declinedAkteurOption.nominativPersonalpronomen} besticht ${declinedZielOption.akkusativPersonalpronomen} mit der Aussicht auf eine Erhabenheit`,
+				text: `${declinedAkteurOption.nominativ} verspricht ${declinedZielOption.dativ} einen Aspekt der Macht, der zu verlockend ist, um ihm zu widerstehen. Eine Position am Hof, ein berühmter Umhang, der von den Helden der Vergangenheit getragen wurde, ein Sitz in der Regierung oder ähnliches`
+			}]
+		}, ];
+	
+		//Wählt eine zufällige Aktion aus
+		const aktion = getRandomText(aktionen);
+	
+		//Führt Variablendeklarationen und Zuweisungen für Aktionen durch
+		const aktionData = aktion;
+		const aktionName = aktionData.name;
+		const aktionText = aktionData.text;
+		const aktionBeschreibung = aktion.beschreibung;
+		const aktionOption = getRandomOption(aktion.optionen);
+		const aktionOptionData = getRandomOption(aktion.optionen);
+		const aktionOptionName = aktionOption.name;
+		const aktionOptionText = aktionOption.text;
+		const aktionOptionBeschreibung = aktionOption.beschreibung;
+	
+		//Erstellt eine Liste von möglichen Absichten basierend auf dekliniertem Akteur-Nomen und wählt zufällig eine Absicht aus
+		const absichten = [{
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, ];
+	
+		//Wählt eine zufällige Absicht aus
+		const absicht = getRandomText(absichten);
+	
+		//Führt Variablendeklarationen und Zuweisungen für Absichten durch
+		const absichtData = absicht;
+		const absichtName = absichtData.name;
+		const absichtText = absichtData.text;
+		const absichtBeschreibung = absicht.beschreibung;
+		const absichtOption = getRandomOption(absicht.optionen);
+		const absichtOptionData = getRandomOption(absicht.optionen);
+		const absichtOptionName = absichtOption.name;
+		const absichtOptionText = absichtOption.text;
+		const absichtOptionBeschreibung = absichtOption.beschreibung;
+	
+		//Erstellt eine Liste von möglichen Entwicklungen basierend auf dekliniertem Ziel-Nomen und wählt zufällig eine Entwicklung aus
+		const entwicklungen = [{
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, {
+			name: ``,
+			text: ``,
+			beschreibung: ``,
+			optionen: [{
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}, {
+				name: ``,
+				text: ``
+			}]
+		}, ];
+	
+		//Wählt eine zufällige Entwicklung aus
+		const entwicklung = getRandomText(entwicklungen);
+	
+		//Führt Variablendeklarationen und Zuweisungen für Entwicklungen durch
+		const entwicklungData = entwicklung;
+		const entwicklungName = entwicklungData.name;
+		const entwicklungText = entwicklungData.text;
+		const entwicklungBeschreibung = entwicklung.beschreibung;
+		const entwicklungOption = getRandomOption(entwicklung.optionen);
+		const entwicklungOptionData = getRandomOption(entwicklung.optionen);
+		const entwicklungOptionName = entwicklungOption.name;
+		const entwicklungOptionText = entwicklungOption.text;
+		const entwicklungOptionBeschreibung = entwicklungOption.beschreibung;
+	
+		// Erzeugt einen Quest-Satz mit dem Akteur, dem Ziel, einer Aktion, einer Absicht und einer Entwicklung
+		const questSentence = `<strong>${declinedAkteur.nominativEin} will ${aktionText}, ${absichtText}, aber ${entwicklungText}.</strong>\n\nDer Akteur ist ${declinedAkteur.nominativEin}. ${declinedAkteur.nominativPersonalpronomen} ${akteurText}. Bei ${declinedAkteur.dativ} handelt es sich um ${declinedAkteurOption.akkusativEin}. ${declinedAkteurOption.nominativPersonalpronomen} ${akteurOptionText}.\n\nDas Ziel ist ${declinedZiel.nominativEin}. ${declinedZiel.nominativPersonalpronomen} ${zielText}. Bei ${declinedZiel.dativ} handelt es sich um ${declinedZielOption.akkusativEin}. ${declinedZielOption.nominativPersonalpronomen} ${zielOptionText}.\n\nDie Handlung ist ${aktionName}. ${aktionBeschreibung}. ${aktionOptionName}. ${aktionOptionText}. \n\nDie Absicht ist ${absichtName}. ${absichtBeschreibung}. ${absichtOptionName}. ${absichtOptionText}.\n\nDie unerwartete Entwicklung ist ${entwicklungName}. ${entwicklungBeschreibung}. ${entwicklungOptionName}. ${entwicklungOptionText}.\n\n`;
+	
+	function capitalizeSentencesWithHTML(text) {
+	// Zerlege den Text in Sätze und HTML-Tags
+	const sentencesWithHTML = text.split(/(\.\n\n|<[^>]*>)/g);
+	
+	// Großschreibung des Textes ohne HTML-Tags
+	let capitalizedText = '';
+	for (let i = 0; i < sentencesWithHTML.length; i++) {
+	const sentence = sentencesWithHTML[i];
+	if (!sentence.startsWith('<')) {
+	capitalizedText += sentence.replace(/(^\w|\.\s*\w)/g, (match) => match.toUpperCase());
+	} else {
+	capitalizedText += sentence;
+	}
+	}
+	
+	return capitalizedText;
+	}
+	
+	const questSentenceCapitalized = capitalizeSentencesWithHTML(questSentence);
+	
+		return questSentenceCapitalized;
+	}
+	// Erstellt die Funktion zum Kopieren der generierten Ergebnisse in die Zwischenablage
+	function copyToClipboard(text) {
+		const tempElement = document.createElement('textarea');
+		tempElement.value = text;
+		document.body.appendChild(tempElement);
+		tempElement.select();
+		document.execCommand('copy');
+		document.body.removeChild(tempElement);
+	}
+	
+	// on-click events
+	btnGenerate.addEventListener('click', (event) => {
+		event.preventDefault();
+	
+		// Fügt einen Event Listener hinzu, um die generierten Ergebnisse zu löschen
+		const container = document.getElementById('container');
+		container.querySelectorAll('li').forEach((li) => li.remove());
+		const numQuests = parseInt(numQuestsField.value);
+		for (let i = 0; i < numQuests; i++) {
+			const quest = generateQuest();
+			const li = document.createElement('li');
+			li.innerHTML = quest;
+			container.appendChild(li);
+		}
+	});
+	
+	// Fügt einen Event Listener hinzu, um das Standardverhalten des 'btnClear'-Buttons zu verhindern
+	btnClear.addEventListener('click', (event) => {
+		event.preventDefault();
+	
+	// Entfernt bisher generierte Resulate
+		const container = document.getElementById('container');
+		container.querySelectorAll('li').forEach((li) => li.remove());
+	});
+	//Fügt einen Event Listener hinzu, um die generierten Ergebnisse in die Zwischenablage zu kopieren
+	btnCopy.addEventListener('click', (event) => {
+		event.preventDefault();
+		const container = document.getElementById('container');
+		const questElements = container.querySelectorAll('li');
+	
+		if (questElements.length > 0) {
+			const namesList = Array.from(questElements).map((li) => li.textContent).join('\n');
+			copyToClipboard(namesList);
+			alert('Die Liste wurde in die Zwischenablage kopiert.');
+		} else {
+			alert('Die Liste ist leer.');
+		}
+	});
+	
+	// Fügt einen Textknoten 'Anzahl der Quests: ' sowie die Felder 'numQuestsField', den Button 'btnGenerate' und den Button 'btnClear' dem Dokumentkörper hinzu.
+	document.body.appendChild(document.createTextNode('Quest-Anzahl: '));
+	document.body.appendChild(numQuestsField);
+	document.body.appendChild(btnGenerate);
+	document.body.appendChild(btnCopy);
+	document.body.appendChild(btnClear);
+	
+	// Fügt einen Container für die Ergebnisse hinzu
+	const container = document.createElement('ul');
+	container.id = 'container';
+	document.body.appendChild(container);
+
+	</script>
+ </body>
+</html>
