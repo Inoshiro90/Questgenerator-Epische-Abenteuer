@@ -1955,7 +1955,7 @@
 				text: `${declinedAkteurOption.dativ} gelingt es, ${declinedZielOption.akkusativ} zu erwerben. ${declinedZielOption.nominativPersonalpronomen} kann gekauft, gefangen genommen oder sogar versklavt werden`
 			}, {
 				name: `${declinedAkteurOption.nominativPersonalpronomen} nimmt ${declinedZielOption.akkusativ} in Besitz, in dem ${declinedAkteurOption.nominativPersonalpronomen} sich in ${declinedZielOption.dativPossesivpronomenMaskulinum} Geist manifestiert`,
-				text: `Der Geist ${declinedAkteurOption.genitiv} dringt buchstäblich in ${declinedZielOption.akkusativ} ein und übernimmt die Kontrolle. `
+				text: `Der Geist ${declinedAkteurOption.genitiv} dringt buchstäblich in ${declinedZielOption.akkusativ} ein und übernimmt die Kontrolle`
 			}, {
 				name: `${declinedAkteurOption.nominativPersonalpronomen} nimmt ${declinedZielOption.akkusativ} in Besitz, in dem ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen} beeinflusst`,
 				text: `${declinedAkteurOption.nominativ} übt durch Propaganda oder andere Mittel so viel Druck auf ${declinedZielOption.akkusativ} aus, dass ${declinedAkteurOption.nominativPersonalpronomen} im Wesentlichen die Kontrolle über ${declinedZielOption.akkusativPersonalpronomen} hat`
@@ -1986,7 +1986,7 @@
 				text: `${declinedZielOption.nominativPersonalpronomen} wird in Stein verwandelt, bis ein Heilmittel gefunden wird. Das kann ein Zauberspruch, ein magischer Gegenstand oder ein Gegengift sein`
 			}, {
 				name: `${declinedAkteurOption.nominativ} verwandelt ${declinedZielOption.akkusativ} in ein Tier`,
-				text: `${declinedZielOption.nominativPersonalpronomen} wird in ein Tier verwandelt, bis ${declinedZielOption.nominativPersonalpronomen} eine bestimmte Aufgabe oder Herausforderung erfüllt, die in ${declinedZielOption.genitivPossesivpronomenFemininum} Tiergestalt normalerweise schwieriger wäre. `
+				text: `${declinedZielOption.nominativPersonalpronomen} wird in ein Tier verwandelt, bis ${declinedZielOption.nominativPersonalpronomen} eine bestimmte Aufgabe oder Herausforderung erfüllt, die in ${declinedZielOption.genitivPossesivpronomenFemininum} Tiergestalt normalerweise schwieriger wäre`
 			}, {
 				name: `${declinedAkteurOption.nominativ} verwandelt ${declinedZielOption.akkusativ} in etwas Monströses`,
 				text: `${declinedZielOption.nominativPossesivpronomenFemininum} Persönlichkeit, ${declinedZielOption.nominativPossesivpronomenMaskulinum} Körper oder beides wird in eine monströse Abart des früheren Selbst verwandelt`
@@ -2020,7 +2020,7 @@
 				text: `${declinedAkteurOption.nominativ} nutzt das Chaos auf dem Schlachtfeld aus, um ${declinedZielOption.akkusativPersonalpronomen} oder ${declinedZielOption.nominativPossesivpronomenFemininum} Armee zu überwältigen`
 			}, {
 				name: `${declinedAkteurOption.nominativ} hintergeht ${declinedZielOption.akkusativ} im Kreis von Verbündeten`,
-				text: `Durch Verleumdung, Spott und dergleichen erniedrigt ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen}, ${declinedZielOption.nominativWelcher} sich von Freunden umgeben wähnt.`
+				text: `Durch Verleumdung, Spott und dergleichen erniedrigt ${declinedAkteurOption.nominativPersonalpronomen} ${declinedZielOption.akkusativPersonalpronomen}, ${declinedZielOption.nominativWelcher} sich von Freunden umgeben wähnt`
 			}, {
 				name: `${declinedAkteurOption.nominativ} hintergeht ${declinedZielOption.akkusativ} in der Wildnis`,
 				text: `${declinedAkteurOption.nominativPersonalpronomen} wird ${declinedZielOption.dativPersonalpronomen} fernab der Zivilisation etwas antun, beispielsweise die Seile durchschneiden, die ${declinedZielOption.akkusativPersonalpronomen} am sicheren Absturz hindern, oder ${declinedZielOption.dativPersonalpronomen} eine Portion vergifteter Beeren unterjubeln`
@@ -2063,208 +2063,209 @@
 	
 		//Erstellt eine Liste von möglichen Absichten basierend auf dekliniertem Akteur-Nomen und wählt zufällig eine Absicht aus
 		const absichten = [{
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `das Erlangen von Herrschaft`,
+			text: `um ein Herrscher zu werden`,
+			beschreibung: `Der Akteur möchte vielleicht Herrscher über ein Reich, eine Stadt, eine Festung, eine Welt oder eine andere Gruppe von Personen oder Orten werden. Die Art der Herrschaft, die er sich wünscht, kann variieren`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur strebt an eine tyrannische Herrschaft an`,
+				text: `Der Akteur will die Führung übernehmen und ohne Einmischung regieren. Seine Diktatur ist uneingeschränkt`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur strebt an eine demokratische Herrschaft an`,
+				text: `Der Akteur möchte die Unterstützung des Volkes gewinnen und vom Volk gewählt werden`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur strebt an eine theokratische Herrschaft an`,
+				text: `Der Akteur glaubt, einem göttlichen Plan zu folgen und regiert mit dem Glauben an der Spitze seiner Regierung`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur strebt an eine militärische Herrschaft an`,
+				text: `Der Akteur will mit Gewalt und militärischem Geschick an die Macht kommen und bleiben. Er verlässt sich auf seine Generäle, die ihm rücksichtslose Ratschläge erteilen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `das Erlangen von Ruhm`,
+			text: `um Ruhm zu erlangen`,
+			beschreibung: `Der Akteur folgt einem Weg, den er in gewisser Weise als ruhmreich empfindet. Die Art des Ruhmes und seine Wirkung auf andere können sehr unterschiedlich sein`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur will göttlichen Ruhm erlangen`,
+				text: `Der Akteur will einem göttlichen Weg folgen, der von einer Gottheit oder einem Pantheon vorgegeben wird`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will infernalen Ruhm erlangen`,
+				text: `Der Akteur möchte Gunst in den Höllen für seine bösen Taten der List oder Kriegsführung erlangen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will mythischen Ruhm erlangen`,
+				text: `Der Akteur wünscht sich, für seine unglaublichen, mythischen Taten durch die Zeit erinnert zu werden`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will innerlichen Ruhm erlangen`,
+				text: `Der Akteur möchte eine Reise oder ein Ziel erreichen, das er sich selbst gesetzt hat`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `das Aufrechterhalten einer Ordnung`,
+			text: `um eine Ordnung aufrechtzuerhalten`,
+			beschreibung: `Der Akteur möchte eine bestimmte Ordnung zu seinem eigenen Vorteil aufrechterhalten. Die Art der Ordnung, die er anstrebt, steht in direktem Zusammenhang mit seiner Position in dieser Ordnung, in der Regel an der Spitze`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur will ein Gesetz aufrechterhalten`,
+				text: `Der Akteur will kriminelle Aktivitäten endgültig unterbinden oder selbst monopolisieren`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will eine Hierarchie aufrechterhalten`,
+				text: `Der Akteur will eine Hierarchie aufrechterhalten, beispielsweise ein Klassensystem oder ein politisches System, das ihn an der Spitze hält`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will eine planare Ordnung aufrechterhalten`,
+				text: `Der Akteur will eine planare Ordnung aufrechterhalten, um seine Heimatebene vor Ausbeutung und Missbrauch durch Wesen einer anderen Ebene zu schützen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will das Gesetz des Stärkeren aufrechterhalten`,
+				text: `Der Akteur will das Überleben des Stärkeren fördern`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `das Schaffen von Chaos`,
+			text: `um Chaos zu schaffen`,
+			beschreibung: `Der Akteur will eine Art Chaos herbeiführen; eine Widerlegung der auferlegten Gesetze, eine Rückkehr zum natürlichen Zustand oder eine Störung der Zivilisation`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur möchte politisches Chaos schaffen`,
+				text: `Der Akteur will die Herrschaft des Reiches in Frage stellen, was zu einem Kampf um die Macht führt`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will ziviles Chaos schaffen`,
+				text: `Der Akteur will, dass sich die Bürger gegen ihre Unterdrücker oder Herrscher auflehnen oder dass der Markt gestört wird`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will natürliches Chaos schaffen`,
+				text: `Der Akteur möchte, dass die Zivilisation zusammenbricht und die wilden Kräfte der Natur wieder die Kontrolle übernehmen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will planares Chaos schaffen`,
+				text: `Der Akteur möchte, dass die Ebenen verschmelzen und das Universum neu erschaffen wird`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der Sturz einer Gottheit`,
+			text: `um eine Gottheit zu stürzen`,
+			beschreibung: `Der Akteur könnte eine Gottheit aus einer Reihe von niederträchtigen Gründen zu Fall bringen wollen`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur will den Platz der Gottheit einnehmen`,
+				text: `Der Akteur kann ein Anhänger einer Gottheit sein, der glaubt, es besser machen zu können, oder ein Außenseiter, der den Status quo herausfordern will`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will ein Pantheon zerstören`,
+				text: `Dies könnte der erste Schritt des Akteurs sein, um ein ganzes Pantheon von Gottheiten zu zerstören`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will eine neue Religion gründen`,
+				text: `Eine gestürzte Gottheit kann eine Gelegenheit sein, die Anhänger zu einem neuen Glauben zu bekehren`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will Zwietrach säen`,
+				text: `Sobald der Anführer einer Domäne getötet wurde, kann dieseins Chaos gestürzt werden, was wiederum Auswirkungen auf die ganze Welt haben kann`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die Erlangung eigener Macht`,
+			text: `um ${declinedAkteur.nominativPossesivpronomenFemininum} Macht zu vergrößern`,
+			beschreibung: `Macht hat viele Formen. Die Handlung ist nur der erste Schritt, um sie in einer bestimmten Eigenschaft zu steigern`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur will seine physische Macht vergrößern`,
+				text: `Die Handlung bedeutet, dass der Akteur zu einem furchterregenderen Kämpfer wird. Er erhält vielleicht einen besonderen Segen, einen Gegenstand oder Erfahrung.
+`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will seine arkane Macht vergrößern`,
+				text: `Die Handlung erhöht die magischen Fähigkeiten des Akteurs auf irgendeine Weise, beispielsweise durch den Erwerb neuer Zauber oder neuen Wissens`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will seine finanzielle Macht vergrößern`,
+				text: `Die Handlung führt dazu, dass der Akteur reicher wird, entweder in Gold oder in Gütern`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will seine politische Macht vergrößern`,
+				text: `Die Handlung gibt dem Akteur die Möglichkeit, Entscheidungen im Rahmen des politischen Geschehens zu treffen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `das Rekrutieren einer Armee`,
+			text: `um eine Armee zu rekrutieren`,
+			beschreibung: `Der Akteur hat Maßnahmen ergriffen, um eine Art Armee zu schaffen. Vielleicht kann er sie mit neuem Reichtum kaufen oder aus entrechteten Bürgern rekrutieren`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur nutzt die Armee zur Eroberung`,
+				text: `Die Armee wird eingesetzt, um neue Untertanen zu erobern`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur nutzt die Armee zur Verteidigung`,
+				text: `Die Armee wird eingesetzt, um das zu verteidigen, was der Akteur bereits erobert hat`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur nutzt die Armee zur Ordnung`,
+				text: `Die Armee wird zur Aufrechterhaltung der Ordnung eingesetzt`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur nutzt die Armee zur Plünderung`,
+				text: `Die Armee wird eingesetzt, um weitere Ressourcen für den Akteur zu gewinnen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die Veränderung der Zeitlinie`,
+			text: `um die Zeitlinie zu verändern`,
+			beschreibung: `Die Zeit ist viel flexibler, wenn man die richtige Magie zur Verfügung hat`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur will die Zeit zurückdrehen`,
+				text: `Der Akteur möchte die Zeit zurückdrehen, um ein bestimmtes Ereignis noch einmal zu erleben oder etwas Verlorenes wiederzuerlangen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will die Zeit vordrehen`,
+				text: `Der Akteur wartet auf etwas und möchte die Zeit vordrehen, um schneller ans Ziel zu kommen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will die Zeit pausieren`,
+				text: `Etwas steht bevor, das der Akteur verhindern möchte. Das Anhalten der Zeit gibt ihm die Möglichkeit, es aufzuhalten`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will etwas bestimmtes an der Zeitlinie verändern`,
+				text: `Der Akteur möchte etwas in der Gegenwart ändern, indem er die Vergangenheit manipuliert`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die Veränderung des eigenen Selbst`,
+			text: `um sich selbst zu verändern`,
+			beschreibung: `Der Akteur will etwas an sich ändern, wozu er sonst nicht in der Lage wäre`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur möchte etwas Physisches an sich ändern`,
+				text: `Eine Änderung der physischen Form im wahrsten Sinne des Wortes. Dies kann zum Beispiel eine Änderung des Volkes oder des Typs sein`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur möchte etwas Intellektuelles an sich ändern`,
+				text: `Eine Veränderung des geistigen Zustandes, um Wissen oder Bildung zu erlangen oder zu verlieren`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur möchte etwas Emotionales an sich ändern`,
+				text: `Eine Veränderung des emotionalen Zustandes. Die Fähigkeit zur Kontrolle von Emotionen oder die Unterdrückung oder Verstärkung einer bestimmten Emotion, und zwar dauerhaft`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur möchte etwas Spirituelles an sich ändern`,
+				text: `Ein spiritueller Zustand, der sonst unerreichbar wäre. Eine Änderung der Gesinnung, des Glaubens oder sogar eine Verwandlung vom Unhold zum Himmlischen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die reine Bosheit`,
+			text: `und tut dies, aus reiner Bosheit`,
+			beschreibung: `Der Wunsch, jemanden körperlich, seelisch oder geistig zu verletzen, ohne einen anderen Grund als die Befriedigung dieses Wunsches`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur will beleidigen`,
+				text: `Der Akteur will das Ziel beleidigen, in den Augen anderer herabsetzen oder einfach dessen Willen brechen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will verletzen`,
+				text: `Der Akteur will dem Ziel direkt oder indirekt körperlichen Schaden zufügen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur hat einen Groll`,
+				text: `Der Akteur hegt einen Groll gegen das Ziel und will sich für eine vermeintliche Kränkung rächen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur will langfristig schädigen`,
+				text: `Der Akteur will die Beziehung zur Zielperson langfristig schädigen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `Rache`,
+			text: `um aus Rache auszuüben`,
+			beschreibung: `Eine vergangene Kränkung durch eine gleichwertige oder sogar übertriebene Vergeltung auszugleichen`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur wurde romantisch gekränkt`,
+				text: `Am Altar verschmäht, von einem anderen zurückgewiesen oder Opfer eines Ehebruchs`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur wurde tödlich gekränkt`,
+				text: `Eine schwere Kränkung, die nur durch den Tod wieder gutgemacht werden kann`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur wurde auf dynastischer Ebene gekränkt`,
+				text: `Ein Verrat auf der Ebene des Königreichs, der nur durch Taten ähnlichen Ausmaßes wieder gutgemacht werden kann`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur wurde wirtschaftlich gekränkt`,
+				text: `Verlorener, gestohlener oder zerstörter Reichtum. Der Akteur will entweder das Verlorene durch seine Tat wiedergutmachen oder seine Wut an einem anderen auslassen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die Natur eines Fluches`,
+			text: `und tut dies, wegen eines Fluches`,
+			beschreibung: `Ein magischer Zauber dunkler Natur zwingt den Akteur zu einem bestimmten Verhalten, ob er will oder nicht`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Bei dem Fluch handelt es sich um einen höllischen Pakt`,
+				text: `Der Akteur oder eine Person, mit der er verbunden ist, hat einen Pakt mit dem Teufel geschlossen, der zurückgezahlt werden muss, um ihre Seelen zu verlieren`
 			}, {
-				name: ``,
-				text: ``
+				name: `Bei dem Fluch handelt es sich um die Verhexung eines Feenwesens`,
+				text: `Der Akteur oder eine Person, mit der er verbunden ist, hat einen Pakt mit einer heimtückischen Fee geschlossen, die den Akteur so lange plagt, bis die Bedingungen erfüllt sind`
 			}, {
-				name: ``,
-				text: ``
+				name: `Bei dem Fluch handelt es sich um einen verfluchten Gegenstand`,
+				text: `Der Akteur hat den falschen magischen Gegenstand erhalten. Vielleicht ist der Gegenstand empfindungsfähig und gibt ihm unwiderstehliche Befehle oder drängt ihn einfach zu einer Handlung`
 			}, {
-				name: ``,
-				text: ``
+				name: `Bei dem Fluch handelt es sich um eine dunkle Prophezeiung`,
+				text: `Unter einem schlechten Mond geboren, ist der Akteur gezwungen, an den Fäden des Schicksals zu ziehen, die das Los für ihn gesponnen hat`
 			}]
 		}, ];
 	
@@ -2284,208 +2285,211 @@
 	
 		//Erstellt eine Liste von möglichen Entwicklungen basierend auf dekliniertem Ziel-Nomen und wählt zufällig eine Entwicklung aus
 		const entwicklungen = [{
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der Verrat durch seine treusten Anhängern`,
+			text: `${declinedAkteur.nominativPersonalpronomen} wird von ${declinedAkteur.dativPossesivpronomenPlural} treusten Anhängern verraten`,
+			beschreibung: `Der Akteur wird auf die eine oder andere Weise von denen verraten, von denen er dachte, dass sie ihm gegenüber loyal seien. Dies kann zu seinem Untergang führen oder ihn dazu veranlassen, seinen eigenen Weg zu gehen`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Der Akteur wird von ihnen verdrängt`,
+				text: `Die Gefolgsleute des Akteurs bringen ihn an einen anderen Ort, um sich die Früchte der Handlung einzuverleiben`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur wird von ihnen eingesperrt`,
+				text: `Die Gefolgsleute des Akteurs liefern ihn an die Behörden aus und werden mit einem Kopfgeld oder politischer Immunität belohnt`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur wird von ihnen ermordet`,
+				text: `Die Gefolgsleute des Akteurs beschließen, ihn zu ermorden und führen den Plan selbst aus`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Akteur wird von ihnen erstetzt`,
+				text: `Die Gefolgsleute des Akteurs beschließen, ein neues Gesicht für ihre Sache zu finden`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der unvermeindliche Tod des Akteurs`,
+			text: `der Abschluss dieser Handlung führt zu ${declinedAkteur.dativPossesivpronomenMaskulinum} unvermeidlichen Tod`,
+			beschreibung: `Das Handeln des Akteurs löst eine Abfolge von Ereignissen aus, die, wenn sie bis zu ihrem Höhepunkt fortgesetzt werden, mit seinem Tod endet`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Sein Handeln führt zu einer Naturkatastrophe`,
+				text: `Die Handlung des Akteurs führt zu einer unausweichlichen Katastrophe, die ihn das Leben kostet`
 			}, {
-				name: ``,
-				text: ``
+				name: `Sein Handeln führt zu einer Seuche`,
+				text: `Die Handlung des Akteurs verursacht die Ausbreitung einer Seuche, die ihn unweigerlich infiziert`
 			}, {
-				name: ``,
-				text: ``
+				name: `Sein Handeln erregt feindlichen Zorn`,
+				text: `Die Handlung des Akteurs erregt den Zorn eines Feindes, der ihn schließlich besiegt. Dies kann ein göttlicher Diener oder eine Gottheit sein`
 			}, {
-				name: ``,
-				text: ``
+				name: `Sein Handeln führt zu seiner Selbstopferung`,
+				text: `Der Akteur opfert sich selbst, um sein Ziel zu erreichen. Wenn es sich um eine Eventualität handelt, kann es sich nicht um einen dauerhaften Zustand handeln`
 			}]
 		}, {
-			name: ``,
-			text: ``,
+			name: `die Schwäche des Akteurs`,
+			text: `${declinedAkteur.nominativPossesivpronomenFemininum} einzige Schwäche ist ein mächtiges Artefakt`,
 			beschreibung: ``,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Seine Schwäche ist eine magische Waffe`,
+				text: `Eine magische Waffe, die den Akteur töten kann. Sie könnte die einzige Möglichkeit sein, ihn zu verletzen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Seine Schwäche ist verbotenes Wissen`,
+				text: `Wissen über den Akteur, das ihn vernichten könnte. Es könnte eine Schwäche aufdecken oder Pläne beschreiben`
 			}, {
-				name: ``,
-				text: ``
+				name: `Seine Schwäche ist ein tödliches Gift`,
+				text: `Eine Tinktur oder ein Trank, der dem Akteur besonders schaden kann. Die Palette reicht von Schlangengift bis Weihwasser`
 			}, {
-				name: ``,
-				text: ``
+				name: `Seine Schwäche ist ein tragbares Gefängnis`,
+				text: `Ein Mittel, mit dem der Akteur, vielleicht sogar gezielt nur der Akteur selbst, leicht gefangen genommen werden kann`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `das Erlangen einer Reliquie`,
+			text: `zuerst muss ${declinedAkteur.nominativPersonalpronomen} eine verborgene Reliqiue erlangen`,
+			beschreibung: `Um mit der Handlung fortfahren zu können, muss der Akteur zunächst einen mächtigen magischen Gegenstand finden. Etwas an diesem Gegenstand macht ihn unersetzlich`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Die Reliquie ist ein Aegis`,
+				text: `Ein Schutzobjekt, das dem Ziel einen Widerstand verleiht, den es zu überwinden gilt`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Reliquie ist eine Waffe`,
+				text: `Eine Waffe, die dem Ziel eine Möglichkeit bietet, sich gegen den Akteur zu verteidigen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Reliquie ist ein Schild`,
+				text: `Jeder Gegenstand, der das Ziel vor Angriffen schützt oder seine Lebenskraft teilt. Etwas, das direkt mit dem Ziel verbunden ist`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Reliquie ist ein Fluchtmittel`,
+				text: `Ein Objekt, das es dem Ziel ermöglicht, der Handlung des Akteurs mit geringem Aufwand zu entkommen`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der Tod eines anderen`,
+			text: `der Abschluss dieser Handlung wird das Leben eines anderen kosten`,
+			beschreibung: `Wenn der Akteur die Handlung zu Ende führt, wird er den Tod einer Person verursachen, die er kennt oder liebt. Diese Person könnte aus Rache oder versehentlich getötet werden oder eine andere tödliche Konsequenz erfahren`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Ein Familienmitglied wird sterben`,
+				text: `Ein Elternteil, ein Großelternteil, ein Kind oder ein Geschwister. Vielleicht auch ein entfernterer Verwandter wie ein Cousin, eine Tante, ein Onkel und so weiter`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Freund wird sterben`,
+				text: `Jemand, ohne den der Akteur nicht leben kann`
+			},{
+				name: `Ein Liebhaber wird sterben`,
+				text: `Jemand, ohne den der Akteur nicht leben kann`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Idol wird sterben`,
+				text: `Vielleicht ein Mentor oder Lehrer des Akteurs oder einfach jemand, den der Akteur in irgendeiner Weise vergöttert`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Begleiter wird sterben`,
+				text: `Ein wichtiger Begleiter wie ein Reittier, ein Haustier, ein Vertrauter, ein Mitarbeiter oder etwas Ähnliches`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der Verlust von etwas Geliebten`,
+			text: `diese Handlung wird etwas zerstören, was ${declinedAkteur.nominativPersonalpronomen} liebt`,
+			beschreibung: `Die Vollendung der Handlung bedeutet, dass etwas, das dem Akteur wichtig ist, zerstört wird, entweder als Teil oder als Folge der Handlung`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Ein magischer Gegenstand wird zerstört`,
+				text: `Ein magischer Gegenstand, der dem Akteur viel bedeutet, vielleicht als Quelle von Macht, Schutz oder Komfort`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Heimat oder der Hort des Akteurs wird zerstört`,
+				text: `Dies kann die ganze Heimat oder sogar die Heimatwelt sein, oder auch nur das Gebäude oder die Gegend, in der der Akteur normalerweise lebt`
 			}, {
-				name: ``,
-				text: ``
+				name: `Der Reichtum des Akteurs wird zerstört`,
+				text: `Die angesammelten Güter eines Lebens, die in einem Wimpernschlag verloren gehen. Muss nicht auf Münzen beschränkt sein`
 			}, {
-				name: ``,
-				text: ``
+				name: `Kunst, die der Akteur liebt, wird zerstört`,
+				text: `Ein Kunstwerk, das für den Akteur prägend ist. Es kann sich um ein wörtliches Kunstwerk handeln, beispielsweise ein Gedicht, oder um ein bildliches Kunstwerk, beispielsweise den Nachthimmel`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `eine konkurrierende Person oder Gruppe`,
+			text: `eine andere Person oder Gruppe verfolgt das gleiche Ziel`,
+			beschreibung: `Die Absicht des Akteurs wird von einer anderen Person oder Organisation geteilt, die versuchen könnte, das Ziel vor dem Akteur zu erreichen, oder sich ihm zumindest in den Weg stellt`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Ein Kult verfolgt das gleiche Ziel`,
+				text: `Verehrer eines bösen Wesens, beispielsweise eines Erzteufels, eines Dämonenfürsten oder eines älteren Bösen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Orden verfolgt das gleiche Ziel`,
+				text: `Ein Ritterorden, ein Druidenzirkel oder eine andere Gruppe von Personen, die sich einer bestimmten Sache verschrieben haben`
 			}, {
-				name: ``,
-				text: ``
+				name: `Eine Glaubensgemeinschaft verfolgt das gleiche Ziel`,
+				text: `Angehörige einer Religion, die der Glaube an eine Gottheit oder eine Gruppe von Gottheiten eint`
 			}, {
-				name: ``,
-				text: ``
+				name: `Eine Kriminelle Organisation verfolgt das gleiche Ziel`,
+				text: `Eine kriminelle Bande, ein Syndikat oder eine Gilde, typischerweise motiviert durch Reichtum oder politische Macht`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die Konsequzenz seines Handelns`,
+			text: `${declinedAkteur.nominativPersonalpronomen} wird für die Konsequenzen teuer bezahlen`,
+			beschreibung: `Wenn die Handlung des Akteurs zu Ende geführt wird, hat dies Konsequenzen, die das Leben des Akteurs in einer monumentalen Art und Weise verändern`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Dem Akteur droht Freiheitsentzug`,
+				text: `Der Akteur wird durch seine Handlung in Gefangenschaft genommen. Diese Gefangenschaft kann magisch oder gewöhnlich sein`
 			}, {
-				name: ``,
-				text: ``
+				name: `Dem Akteur droht der Tod`,
+				text: `Die Folgen der Handlung des Akteurs führen direkt oder indirekt zum Tod des Akteurs`
 			}, {
-				name: ``,
-				text: ``
+				name: `Dem Akteur droht die Verbannung`,
+				text: `Der Akteur wird als Folge seiner Handlung verbannt. Dies kann eine Strafe oder einfach eine natürliche Folge sein`
 			}, {
-				name: ``,
-				text: ``
+				name: `Dem Akteur droht Erniedrigung`,
+				text: `Das soziale Ansehen, der Reichtum, die militärische Macht oder ein anderes Ansehen des Akteurs wird durch die Handlung ruiniert`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der Erhalt neuer Informationen`,
+			text: `durch neue Informationen ändert ${declinedAkteur.nominativPersonalpronomen} ${declinedAkteur.nominativPossesivpronomenFemininum} Sichtweise`,
+			beschreibung: `Der Akteur erhält neue Informationen, die das Ziel, die Handlung oder die Absicht des Akteurs verändern. Dies kann die Handlung verzögern oder völlig verändern`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Die Information ist persönlicher Natur`,
+				text: `Der Akteur stellt fest, dass er selbst oder jemand, der ihm wichtig ist, durch seine Handlung gefährdet oder mit dem Ziel in Verbindung steht`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Information ist moralischer Natur`,
+				text: `Eine moralische oder ethische Enthüllung stellt die Handlung des Akteurs in Frage`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Information ist eine Überlieferung`,
+				text: `Eine historische oder mythische Offenbarung führt zu einer Änderung des Plans`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Information weist auf eine Schwachstelle in seinem Plan hin`,
+				text: `Der Akteur entdeckt eine Schwachstelle in seinem Plan, die eine sofortige Reaktion erfordert und die aktuelle Handlung verzögert`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `die Unterbrechung seines Handelns`,
+			text: `${declinedAkteur.nominativPersonalpronomen} wird unerwartet gestoppt`,
+			beschreibung: `Der Akteur wird in der Ausführung seiner Handlung gestoppt. Dadurch wird er zumindest vorübergehend daran gehindert, seine Absicht zu verfolgen`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Ein Göttlicher stoppt den Akteur`,
+				text: `Ein Vertreter des Göttlichen, vielleicht sogar eine Gottheit, unterbricht die Handlung des Akteurs`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Sterblicher stoppt den Akteur`,
+				text: `Ein Humanoider tut etwas, um die Handlung des Akteurs zu verzögern, vielleicht unter großen Kosten für ihn selbst`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Monster stoppt den Akteur`,
+				text: `Ein monströses Wesen, intelligent oder nicht, zwingt den Akteur, seine Handlung aufzuschieben`
 			}, {
-				name: ``,
-				text: ``
+				name: `Ein Ereignis stoppt den Akteur`,
+				text: `Ein großes Ereignis, beispielsweise ein Krieg, eine Naturkatastrophe oder eine astrologische Konstellation, beeinflusst die Handlung des Akteurs`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `göttliche Vergeltung`,
+			text: `${declinedAkteur.nominativPersonalpronomen} löst göttliche Vergeltung aus`,
+			beschreibung: `Die letztendliche Erfüllung der Absichten des Akteurs oder die Handlung, die er unternimmt, um sie zu erfüllen, erzürnt eine oder mehrere Gottheiten, die Vergeltung oder Rache fordern`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Die göttliche Vergeltung kommt von einer Gottheit des Krieges`,
+				text: `Eine Kriegsgottheit versucht, den Akteur mit dem Gewicht von tausend gepanzerten Stiefeln zu erdrücken`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die göttliche Vergeltung kommt von einer Gottheit des Todes`,
+				text: `Eine Gottheit des Todes fordert das Leben des Akteurs direkt, schickt einen Avatar, um dies zu tun, oder findet einen anderen Weg, um langsam seine Lebenskraft zu entziehen`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die göttliche Vergeltung kommt von einer Gottheit des Lebens`,
+				text: `Eine Gottheit des Lebens rebelliert gegen die Taten des Akteurs und schickt Agenten aus, um ihn zu stürzen und Rache zu üben`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die göttliche Vergeltung kommt von einer Gottheit der Natur`,
+				text: `Eine Naturgottheit rebelliert gegen den Akteur und schickt die Kräfte der Natur gegen ihn aus`
 			}]
 		}, {
-			name: ``,
-			text: ``,
-			beschreibung: ``,
+			name: `der Schutz durch eine Legion`,
+			text: `${declinedAkteurOption.nominativPersonalpronomen} wird von einer Legion beschützt`,
+			beschreibung: `Der Akteur wird von einer großen Anzahl von Kreaturen verteidigt, die mit ihm verbündet sind oder aus anderen Gründen die Handlung durchführen wollen. Dies macht es sehr viel schwieriger, den Akteur zu stoppen`,
 			optionen: [{
-				name: ``,
-				text: ``
+				name: `Die Legion besteht aus Humanoiden`,
+				text: `Ob zivilisiert oder nicht, diese Armee besteht aus intelligenten Humanoiden, die sich mit Geschick und Effizienz verteidigen können`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Legion besteht aus Monstern`,
+				text: `Eine Horde gefräßiger Monster schützt den Akteur vor Schaden, ob er will oder nicht. Sie können frei umherstreifen oder in einem Verlies oder in einem Hort eingesperrt sein`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Legion besteht aus Untoten`,
+				text: `Untote, die entweder vom Akteur erschaffen oder von ihm kontrolliert werden, halten Personen mit feindlichen Absichten davon ab, sich ihm zu nähern`
 			}, {
-				name: ``,
-				text: ``
+				name: `Die Legion besteht aus Konstrukten`,
+				text: `Erschaffene Maschinen, die verteidigen und beschützen sollen. Diese Legion von Konstrukten hört nur auf den Akteur und verteidigt ihn unermüdlich und unfehlbar`
 			}]
 		}, ];
 	
