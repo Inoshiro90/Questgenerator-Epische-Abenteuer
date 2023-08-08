@@ -312,10 +312,10 @@
 	
 	// Erstellt Eingabefeld und Buttons
 	// Eingabefeld für die Anzahl der zu generierenden Quests
-	const numQuestsField = document.createElement('input');
-	numQuestsField.type = 'number';
-	numQuestsField.style.margin = '10px';
-	numQuestsField.style.width = '50px';
+	const numAnzahlField = document.createElement('input');
+	numAnzahlField.type = 'number';
+	numAnzahlField.style.margin = '10px';
+	numAnzahlField.style.width = '50px';
 	
 	// Button zur Generierung der Sätze
 	const btnGenerate = document.createElement('button');
@@ -2544,7 +2544,7 @@
 	
 
 	// Event Listener für das Eingabefeld hinzufügen
-	numQuestsField.addEventListener('keydown', (event) => {
+	numAnzahlField.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault();
         generateAndDisplayQuests();
@@ -2555,8 +2555,8 @@
 	function generateAndDisplayQuests() {
     const container = document.getElementById('container');
     container.querySelectorAll('li').forEach((li) => li.remove());
-    const numQuests = parseInt(numQuestsField.value);
-    for (let i = 0; i < numQuests; i++) {
+    const numAnzahl = parseInt(numAnzahlField.value);
+    for (let i = 0; i < numAnzahl; i++) {
         const quest = generateQuest();
         const li = document.createElement('li');
         li.innerHTML = quest;
@@ -2575,8 +2575,8 @@
 		event.preventDefault();
 		const container = document.getElementById('container');
 		container.querySelectorAll('li').forEach((li) => li.remove());
-		const numQuests = parseInt(numQuestsField.value);
-		for (let i = 0; i < numQuests; i++) {
+		const numAnzahl = parseInt(numAnzahlField.value);
+		for (let i = 0; i < numAnzahl; i++) {
 			const quest = generateQuest();
 			const li = document.createElement('li');
 			li.innerHTML = quest;
@@ -2607,9 +2607,9 @@
 		}
 	});
 	
-	// Fügt einen Textknoten 'Anzahl der Quests: ' sowie die Felder 'numQuestsField', den Button 'btnGenerate' und den Button 'btnClear' dem Dokumentkörper hinzu.
+	// Fügt einen Textknoten 'Anzahl der Quests: ' sowie die Felder 'numAnzahlField', den Button 'btnGenerate' und den Button 'btnClear' dem Dokumentkörper hinzu.
 	document.body.appendChild(document.createTextNode('Quest-Anzahl: '));
-	document.body.appendChild(numQuestsField);
+	document.body.appendChild(numAnzahlField);
 	document.body.appendChild(btnGenerate);
 	document.body.appendChild(btnCopy);
 	document.body.appendChild(btnClear);
